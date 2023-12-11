@@ -222,9 +222,12 @@ h6 {
 
 }
 
+
+
 .footer .concern {
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 .footer .concern p {
@@ -265,12 +268,15 @@ h6 {
 
 .footer img {
     width: 60px;
-    margin-right: 160px;
+    margin: 0 auto;
 }
 
 .footer .social_media {
-    width: 400px;
-    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 100px;
+    width: 40%;
+    justify-content: flex-end;
+
 }
 
 .footer .social_media li {}
@@ -281,10 +287,11 @@ h6 {
     height: 80px;
     border-radius: 50%;
     background-color: black;
-    background-image: url(/img/icon/media/icon-media_sprite_2.png);
+    background-image: url(../img/icon/media/icon-media_sprite_2.png);
     background-position: center;
     background-repeat: no-repeat;
     transition: .3s;
+    margin-right: 20px;
 }
 
 .footer .social_media li a:hover {

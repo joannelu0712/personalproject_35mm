@@ -154,7 +154,7 @@ h6 {
 .price {
     height: 685px;
     margin-top: 80px;
-    background-image: url(/img/01mainpage/main_ticketprice.jpg);
+    background-image: url(../img/01mainpage/main_ticketprice.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -207,7 +207,7 @@ h6 {
     display: block;
     width: 72px;
     height: 72px;
-    background-image: url(/img/icon/theaters/icon-theaters_sprite.png);
+    background-image: url(../img/icon/theaters/icon-theaters_sprite.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -256,12 +256,13 @@ h6 {
 
 
 .bottom {
-    background-image: url(/img/01mainpage/main_externallink.jpg);
+    background-image: url(../img/01mainpage/main_externallink.jpg);
     background-color: rgba(0, 0, 0, .5);
     background-blend-mode: multiply;
     height: 100%;
     /*高度寫100vh似乎會太大  */
     margin-top: 80px;
+    padding-bottom: 80px;
 
 }
 
@@ -273,7 +274,6 @@ h6 {
 }
 
 .bottom .container {
-    /* outline: 3px solid salmon; */
     margin: 0 auto;
     max-width: 1200px;
     margin-bottom: 160px;
@@ -286,7 +286,6 @@ h6 {
 }
 
 .bottom .container li {
-    /* outline: 3px solid yellow; */
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -310,7 +309,7 @@ h6 {
     height: 200px;
     border-radius: 50%;
     background-color: white;
-    background-image: url(/img/icon/links/icon-links_sprite.png);
+    background-image: url(../img/icon/links/icon-links_sprite.png);
     margin-bottom: 40px;
 
 }
