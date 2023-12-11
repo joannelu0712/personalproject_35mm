@@ -48,6 +48,8 @@
     color: black;
     border-color: black;
     transition: .3s;
+    background-color: transparent;
+    font-weight: bold;
 }
 
 .btn_black:hover {
@@ -73,6 +75,7 @@
     display: flex;
     align-items: center;
     transition: .3s;
+    background-color: transparent;
 }
 
 .btn_blue::before {
@@ -147,7 +150,7 @@
     justify-content: space-between;
 }
 
-.Tbtn_bar div a:first-child {
+.Tbtn_bar div button {
     margin-right: 20px;
 }
 
@@ -265,4 +268,45 @@
 .login .btn_submit {
     margin: 0 auto;
     padding: 8px 24px;
+}
+
+/*---------lightbox----------*/
+.none {
+    display: none;
+}
+
+.lightbox {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, .5);
+    color: black;
+}
+
+.container>div,
+h2,
+h3,
+img {
+    margin-bottom: 40px;
+}
+
+.lightbox .btn_bar {
+    display: flex;
+    justify-content: center;
+}
+
+.lightbox .btn_bar .btn_blue {
+    margin-right: 60px;
+    background-color: white;
+}
+
+.lightbox img {
+    width: 60px;
+}
+
+/*-------button----------*/
+button {
+    cursor: pointer;
 }
