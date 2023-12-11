@@ -87,6 +87,10 @@
     margin-right: 4px;
 }
 
+.popup .btn_blue:hover {
+    border-color: var(--kv_blue);
+}
+
 .btn_on {
     border-color: var(--kv_red);
     background-color: var(--kv_red);
@@ -277,18 +281,23 @@
 
 .lightbox {
     position: fixed;
-    top: 120px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100vh;
     background-color: hsla(0, 0%, 0%, .5);
     color: black;
+    padding-top: 120px;
+}
+
+.lightbox h2 {
+    margin-top: 40px;
 }
 
 .container>div,
-h2,
-h3,
-img {
+.lightbox h2,
+.lightbox h3,
+.lightbox img {
     margin-bottom: 40px;
 }
 

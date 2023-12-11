@@ -20,6 +20,7 @@
     width: 900px;
     margin: 0 auto;
     margin-bottom: 100px;
+    position: relative;
 }
 
 .card_map iframe {
@@ -39,14 +40,24 @@
 .card_map section h2 {
     font-size: 32px;
     font-weight: bold;
-    letter-spacing: 12px;
+    letter-spacing: 8px;
     margin-bottom: 40px;
+    font-family: 'Aoboshi One', serif;
+    line-height: 2;
 }
 
 .card_map section h3 {
     font-size: 24px;
     margin-bottom: 40px;
 }
+
+.card_map>img {
+    position: absolute;
+    right: 30%;
+    top: 60px;
+    width: 60px;
+}
+
 
 .btn_bar {
     display: flex;
