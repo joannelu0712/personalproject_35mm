@@ -1,0 +1,114 @@
+/*-----------訂單資訊visualize------------*/
+.mini_ticket {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 64px;
+}
+
+.mini_ticket img {
+    border-radius: 20px;
+    margin-right: 40px;
+}
+
+.mini_ticket>section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title {
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title h3+h3 {
+    color: black;
+    background-color: white;
+    box-shadow: 4px 8px 0px var(--kv_orange);
+    font-weight: bold;
+    padding: 8px 16px;
+    margin-left: 8px;
+    justify-self: flex-start;
+    margin-right: 280px;
+}
+
+.title a {
+    align-self: flex-end;
+}
+
+/*---------white mini ticket------------*/
+.ticket,
+.check {
+    display: flex;
+    flex-direction: column;
+    outline: 8px dashed white;
+    padding: 40px;
+    margin-bottom: 40px
+}
+
+.ticket div {
+    display: flex;
+    align-items: center;
+}
+
+.ticket div:first-child {
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.ticket div:first-child h3 {
+    font-size: 24px;
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+
+
+.ticket .whitebgc {
+    background-color: white;
+    color: black;
+    width: 560px;
+    height: 60px;
+}
+
+.ticket .whitebgc:nth-child(2) {
+    border-bottom: 4px solid black;
+}
+
+.ticket .whitebgc:nth-child(2) p:first-child {
+    width: 240px;
+    line-height: 60px;
+    border-right: 4px solid black;
+
+}
+
+.ticket .whitebgc:nth-child(2) p:last-child {
+    width: 320px;
+
+}
+
+.ticket .whitebgc:nth-child(3)>p {
+    width: 160px;
+}
+
+.ticket .whitebgc:nth-child(3) section,
+.ticket .whitebgc:nth-child(3) section+p {
+    width: 200px;
+    line-height: 60px;
+    border-left: 4px solid black;
+}
+
+
+
+
+.ticket .whitebgc section {
+    display: flex;
+    align-items: center;
+}
+
+.ticket .whitebgc section img {
+    margin: 0 20px 0 40px;
+    border-radius: 0%;
+}

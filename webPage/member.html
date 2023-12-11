@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35mm | 會員中心</title>
+    <!-- Google Fonts: Aoboshi One, Inter(medium & bold),Noto Sans(medium & bold) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Inter:wght@500;700&family=Noto+Sans+TC:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/style_member.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="../img/logo/logo_gray.png" alt="">
+        <ul>
+            <li><a href="../index.html" class="page_home">Home</a></li>
+            <li><a href="../webPage/ticket.html">See a Movie</a></li>
+            <li><a href="../webPage/showtimes.html">Showtimes</a></li>
+            <li>
+                <a href="#">
+                    Movies
+                </a>
+                <section class="hidden other_hidden">
+                    <ul>
+                        <li><a href="../webPage/movies.html">電影總覽</a></li>
+                        <li><a href="../webPage/pond.html">重映許願池</a></li>
+                    </ul>
+                </section>
+            </li>
+            <li><a href="../webPage/theaters.html">Theaters</a></li>
+            <li><a href="#">Foods & Drinks</a></li>
+            <li><a href="#" class="page_now">Login</a></li>
+        </ul>
+    </div>
+    <h2 class="kv_title">會員登入</h2>
+    <div class="login">
+        <div class="user">
+            <label for="user">帳號：</label>
+            <input type="text" id="user" placeholder="手機號碼 / email">
+        </div>
+        <div class="pd">
+            <label for="pd">密碼：</label>
+            <input type="password" id="pd" placeholder="8碼以上且區分大小寫">
+        </div>
+        <a href="#">忘記密碼</a>
+        <a href="#" class="btn_submit btn">提交</a>
+
+    </div>
+    <h2 class="kv_title">還不是會員嗎？</h2>
+    <div class="wrapper">
+        <img src="../img/07memberCenter/memberCenter_img.jpg" alt="">
+        <section class="member_text">
+            <h3>成為35mm會員可以......</h3>
+            <div>
+                <p>儲值金消費滿額即送電影票</p>
+                <p>線上訂票免訂票手續費</p>
+                <p>參與會員限定特映會</p>
+                <p>許願池權重增加</p>
+                <p>壽星禮</p>
+            </div>
+            <a href="#" class="btn btn_black register">我要註冊</a>
+        </section>
+    </div>
+    <div class="footer">
+        <div class="concern">
+            <ul class="about">
+                <li><a href="#">關於35mm</a></li>
+                <li><a href="#">隱私權政策</a></li>
+                <li><a href="#">版權聲明</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+            <div>
+                <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+            </div>
+        </div>
+        <img src="../img/logo/logo_gray.png" alt="">
+        <ul class="social_media">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+    <script>
+        let submit_rel = document.getElementsByClassName('submit')[0];
+        submit_rel.addEventListener('click', function () {
+            alert('您已成功登入');
+        });
+        let register_rel = document.getElementsByClassName('register')[0];
+        register_rel.addEventListener('click', function () {
+            alert('您已經是會員囉！');
+        });
+    </script>
+</body>
+
+</html>

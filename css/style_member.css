@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+}
+
+.kv_title {
+    margin: 120px auto 60px auto;
+}
+
+
+/*---------會員註冊介紹-------------*/
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.wrapper img {
+    width: 500px;
+    margin-right: 40px;
+}
+
+.member_text {
+    width: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px 40px;
+    position: relative;
+    border-radius: 20px;
+    outline: 8px dashed var(--kv_orange);
+}
+
+.member_text h3 {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 40px;
+}
+
+.member_text div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: left;
+}
+
+.member_text p {
+    color: black;
+    background-color: var(--kv_orange);
+    font-size: 24px;
+    padding-bottom: 8px;
+    width: fit-content;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.member_text a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}

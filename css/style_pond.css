@@ -1,0 +1,59 @@
+.top {
+    background-image: url(../img/04_2wish/wish_top.jpg);
+    background-color: rgba(0, 0, 0, .4);
+    background-blend-mode: multiply;
+    overflow: hidden;
+    position: relative;
+}
+
+.top div {
+    display: flex;
+    position: absolute;
+
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top div input {
+    width: 300px;
+    border-radius: 20px;
+    margin-right: 24px;
+    box-shadow: 4px 4px 0 var(--kv_orange);
+    border: 2px solid var(--kv_gray);
+    background-color: var(--kv_gray);
+    outline: none;
+    padding-left: 16px;
+    transition: .5s;
+}
+
+.top div input:focus {
+    background-color: white;
+    box-shadow: inset 4px 4px 0 rgba(0, 0, 0, .5);
+    border: 2px solid var(--kv_orange);
+}
+
+.top div a {
+    color: white;
+    border-color: var(--kv_orange);
+    background-color: var(--kv_orange);
+}
+
+.kv_title {
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+h2 {
+    margin: 40px 0 0px;
+    font-size: 32px;
+}
+
+
+.bottom {
+    background-image: url(../img/04_2wish/wish_textCloud.png);
+    width: 80%;
+    margin: 0 auto;
+}

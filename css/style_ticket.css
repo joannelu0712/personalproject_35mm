@@ -1,0 +1,201 @@
+.popup h2 {
+    margin-bottom: 8px;
+}
+
+.popup .back {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    position: absolute;
+    left: 20px;
+    top: 4px;
+    background-color: var(--kv_gray);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.popup .back:active {
+    color: var(--kv_orange);
+}
+
+
+.container {
+    display: flex;
+    background-color: black;
+    border-left: 8px dashed white;
+    border-right: 8px dashed white;
+}
+
+.container ul {
+    padding: 0px 40px;
+}
+
+.container ul::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 12px solid var(--kv_red);
+    border-color: transparent transparent var(--kv_red) transparent;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.container ul::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 12px solid var(--kv_red);
+    border-color: var(--kv_red) transparent transparent transparent;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.container li {}
+
+.container li a {
+    display: block;
+    width: 400px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.container li:nth-child(1) a {
+    background-image: url(../img/02buyTicket/banner/buyTicket_banner_01.jpg);
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: 50% 35%;
+    background-size: cover;
+    margin-bottom: 8px;
+
+}
+
+.container li:nth-child(1) a:hover {
+    background-color: transparent;
+}
+
+.container li:nth-child(2) a {
+    background-image: url(../img/02buyTicket/banner/buyTicket_banner_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-size: cover;
+    margin-bottom: 8px;
+}
+
+.container li:nth-child(3) a {
+    background-image: url(../img/02buyTicket/banner/buyTicket_banner_03.jpg);
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container li:nth-child(3) a:hover {
+    background-color: transparent;
+}
+
+.container section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container section h3 {
+    font-size: 20px;
+    align-self: flex-start;
+    padding-left: 40px;
+    letter-spacing: 4px;
+}
+
+.container section h3 span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.container section>h3 {
+    margin-bottom: 20px;
+}
+
+.container section a {}
+
+.container section div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    align-self: flex-start;
+}
+
+.container section div:nth-child(2) h3:first-child {
+    align-self: center;
+}
+
+.container section div:nth-child(2) h3:last-child {
+    color: black;
+    background-color: white;
+    box-shadow: 4px 8px 0px var(--kv_orange);
+    font-weight: bold;
+    padding: 8px 16px;
+    margin-left: 8px;
+}
+
+.container .btn_block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container .btn_block .btn {
+    margin: 0 10px;
+}
+
+.container section .radio {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    height: 80px;
+    padding: 0 60px;
+    accent-color: var(--kv_orange);
+}
+
+.container section table tr {}
+
+.container section table td {
+    width: 100px;
+}
+
+.container section table td input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.container section div:nth-child(5) {
+    align-self: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.container section div:nth-child(5) h3 {
+    padding: 8px;
+}
+
+
+.container section>a {
+    margin-top: 20px;
+    align-self: center;
+}
+
+img {
+    width: 60px;
+}

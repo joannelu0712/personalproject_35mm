@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35mm | 重映許願池</title>
+    <!-- Google Fonts: Aoboshi One, Inter(medium & bold),Noto Sans(medium & bold) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Inter:wght@500;700&family=Noto+Sans+TC:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href='../css/style_pond.css'>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../img/logo/logo_gray.png" alt="">
+        <ul>
+            <li><a href="../index.html" class="page_home">Home</a></li>
+            <li><a href="../webPage/ticket.html">See a Movie</a></li>
+            <li><a href="../webPage/showtimes.html">Showtimes</a></li>
+            <li>
+                <a href="#" class="page_now">
+                    Movies
+                </a>
+                <section class="hidden other_hidden">
+                    <ul>
+                        <li><a href="../webPage/movies.html">電影總覽</a></li>
+                        <li><a href="#">重映許願池</a></li>
+                    </ul>
+                </section>
+            </li>
+            <li><a href="../webPage/theaters.html">Theaters</a></li>
+            <li><a href="#">Foods & Drinks</a></li>
+            <li><a href="../webPage/member.html">Login</a></li>
+        </ul>
+    </div>
+    <div class="top full">
+        <section>
+            <div>
+                <input type="text" placeholder="想在電影院看到什麼電影？">
+                <a href="#" class="btn btn_submit">送出</a>
+            </div>
+            <h2 class="kv_title">重映許願池</h2>
+        </section>
+    </div>
+
+
+    <h2>來看看大家都許願了些什麼......</h2>
+    <div class="bottom full"></div>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="concern">
+            <ul class="about">
+                <li><a href="#">關於35mm</a></li>
+                <li><a href="#">隱私權政策</a></li>
+                <li><a href="#">版權聲明</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+            <div>
+                <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+            </div>
+        </div>
+        <img src="../img/logo/logo_gray.png" alt="">
+        <ul class="social_media">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+
+    <script>
+
+        let wishes = document.getElementsByTagName('input')[0];
+
+        let submit_rel = document.getElementsByClassName('btn_submit')[0];
+        submit_rel.addEventListener('click', function () {
+
+            if (wishes.value !== "") {
+                alert(`35mm許願池已收到您的願望!希望${wishes.value.trim()}能早日在大銀幕與影迷們見面`);
+                wishes.value = '';
+            } else {
+                alert("要確實許願，願望才會成真噢!")
+            }
+
+
+        });
+    </script>
+</body>
+
+</html>

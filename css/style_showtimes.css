@@ -1,0 +1,127 @@
+/*--------nav---------*/
+.nav {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    border-bottom: 4px solid var(--kv_orange);
+}
+
+.nav section {
+    display: flex;
+    margin-left: 40px;
+}
+
+.nav .date {
+    display: flex;
+}
+
+.nav .date p,
+.nav section p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 12px;
+}
+
+.nav ul {
+    display: flex;
+    margin-right: 80px;
+}
+
+.nav li {}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--kv_gray);
+    margin-left: 32px;
+}
+
+.nav li a:hover {
+    color: white;
+}
+
+.nav li .active {
+    font-weight: bold;
+    color: var(--kv_orange);
+}
+
+/*------button bar---------*/
+.btn_bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+}
+
+.dateLeft {
+    display: flex;
+}
+
+.dateLeft a:first-child {
+    margin-right: 20px;
+}
+
+.dateRight {
+    display: flex;
+
+}
+
+.dateRight a {
+    margin-left: 12px;
+}
+
+
+
+/*-----------many cards with timetable-------------*/
+.card_pool {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.card_showtimes {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .2);
+    padding-bottom: 20px;
+    border-radius: 20px;
+    margin: 0 8px 40px;
+
+}
+
+
+.card_showtimes img {
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card_showtimes h3 {
+    font-size: 24px;
+}
+
+.card_showtimes>div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.card_showtimes>div p {
+    margin-top: 8px;
+}
+
+.card_showtimes .timetable div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-bottom: 12px;
+}

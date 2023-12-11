@@ -1,0 +1,129 @@
+/*-------滿版圖---------*/
+.top {
+    width: 80%;
+    margin: 0 auto;
+    background-image: url(../img/04_1film/film_fullscreen.jpg);
+    position: relative;
+}
+
+.top::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 28px solid var(--kv_orange);
+    border-color: transparent var(--kv_orange) transparent transparent;
+    position: absolute;
+    left: -80px;
+    top: 50%;
+}
+
+.top::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 28px solid var(--kv_orange);
+    border-color: transparent transparent transparent var(--kv_orange);
+    position: absolute;
+    right: -80px;
+    top: 50%;
+}
+
+
+
+/*-------------滿版圖以下------------------*/
+
+
+/*--------------main - side bar-------------------*/
+.side_bar {
+    background-color: var(--kv_orange);
+    position: sticky;
+    left: 0;
+    top: 100px;
+    width: 250px;
+    height: 100vh;
+    float: left;
+    z-index: 5;
+    text-align: left;
+    overflow-y: auto;
+}
+
+/* //捲軸底色 */
+.side_bar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--kv_gray);
+}
+
+/* //捲軸寬度 */
+.side_bar::-webkit-scrollbar {
+    width: 8px;
+    background-color: black;
+}
+
+/* //捲軸本體顏色 */
+.side_bar::-webkit-scrollbar-thumb {
+    background-color: var(--kv_red);
+}
+
+.side_bar ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.side_bar li a:hover {
+    box-shadow: 0 4px 0 black;
+    color: white;
+}
+
+.side_bar li a {
+    display: block;
+    text-decoration: none;
+    color: var(--kv_gray);
+    font-size: 24px;
+    padding: 40px 40px;
+}
+
+.side_bar li .active {
+    color: white;
+    font-weight: bold;
+}
+
+/*-----------main - many cards with movies-------------*/
+.card_pool {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0 0 80px;
+}
+
+.card_movie {
+    text-align: left;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    outline: 8px dashed var(--kv_orange);
+    margin: 0 16px 80px 16px;
+}
+
+
+.card_movie div {
+    color: black;
+    margin-bottom: 8px;
+}
+
+.card_movie h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card_movie p {}
+
+.card_movie img {
+    width: 270px;
+    height: 270px;
+    border-radius: 20px;
+
+}
