@@ -16,7 +16,6 @@
     flex-direction: column;
 }
 
-
 .title {
     display: flex;
     margin-bottom: 60px;
@@ -39,7 +38,6 @@
     align-self: flex-end;
 }
 
-/*---------white mini ticket------------*/
 .ticket,
 .check {
     display: flex;
@@ -49,6 +47,7 @@
     margin-bottom: 40px
 }
 
+/*---------white part of mini ticket------------*/
 .ticket div {
     display: flex;
     align-items: center;
@@ -81,12 +80,10 @@
     width: 240px;
     line-height: 60px;
     border-right: 4px solid black;
-
 }
 
 .ticket .whitebgc:nth-child(2) p:last-child {
     width: 320px;
-
 }
 
 .ticket .whitebgc:nth-child(3)>p {
@@ -99,9 +96,6 @@
     line-height: 60px;
     border-left: 4px solid black;
 }
-
-
-
 
 .ticket .whitebgc section {
     display: flex;

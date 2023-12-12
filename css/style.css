@@ -23,18 +23,13 @@ h6 {
 .top .additional h6 {
     font-size: 28px;
     margin-bottom: 16px;
-
 }
 
 .top .additional p {
     font-size: 16px;
 }
 
-
-
 /*------------main page hover bar---------------*/
-.hover_bar {}
-
 .hover_bar ul {
     display: flex;
     justify-content: space-evenly;
@@ -51,7 +46,6 @@ h6 {
     height: 100%;
     position: relative;
     overflow: hidden;
-
 }
 
 .hover_bar li a:hover::before {
@@ -61,7 +55,6 @@ h6 {
     height: 100%;
     border-top: 3px solid white;
     border-left: 3px solid var(--kv_gray);
-    /* border-width: 3px 0px 3px 3px; */
 }
 
 .hover_bar li a:hover h5 {
@@ -88,16 +81,12 @@ h6 {
     width: 100%;
 }
 
-
-
 /*---------main page 不規則----------*/
 .irregular {
-    /* outline: 3px solid orange; */
     margin-top: 80px;
     height: 700px;
     position: relative;
 }
-
 
 .irregular img {
     position: absolute;
@@ -137,16 +126,12 @@ h6 {
     z-index: 1;
 }
 
-
 /*------main page food ad------*/
-
 .food_ad {
     margin-top: 80px;
     padding: 0px 40px;
     display: flex;
 }
-
-.food_ad img {}
 
 .food_ad section {
     display: flex;
@@ -182,7 +167,6 @@ h6 {
     background-position: center;
     display: flex;
     justify-content: center;
-
     position: relative;
 }
 
@@ -207,7 +191,6 @@ h6 {
 
 .card_price {
     box-sizing: border-box;
-    /* outline: 3px solid olive; */
     width: 250px;
     align-self: center;
     padding: 20px 20px 0;
@@ -215,7 +198,6 @@ h6 {
     background-color: rgba(0, 0, 0, .8);
     box-shadow: 8px 8px 0 var(--kv_orange);
     transition: .5s;
-
 }
 
 .card_price:hover {
@@ -268,15 +250,11 @@ h6 {
     text-align: left;
 }
 
-
 .card_price p:first-child {
     font-size: 24px;
 }
 
-
 /*------main page external links--------*/
-
-
 .bottom {
     background-image: url(../img/01mainpage/main_externallink.jpg);
     background-color: rgba(0, 0, 0, .5);
@@ -285,7 +263,6 @@ h6 {
     /*高度寫100vh似乎會太大  */
     margin-top: 80px;
     padding-bottom: 80px;
-
 }
 
 .bottom h1 {
@@ -313,18 +290,11 @@ h6 {
     margin-top: 40px;
     flex-basis: 250px;
     align-items: center;
-
-
 }
 
 .bottom .container li a {
-
     display: block;
-
 }
-
-
-
 
 .bottom .container li a:first-child {
     width: 200px;
@@ -333,7 +303,6 @@ h6 {
     background-color: white;
     background-image: url(../img/icon/links/icon-links_sprite.png);
     margin-bottom: 40px;
-
 }
 
 .bottom .container li a:first-child:hover {

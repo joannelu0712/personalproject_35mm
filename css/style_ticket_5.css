@@ -17,8 +17,7 @@
     align-self: center;
 }
 
-/*------mini ticket 訂單確認區塊---------*/
-
+/*------mini ticket 訂單詳細內容區塊---------*/
 .check {
     text-align: left;
 }
@@ -62,7 +61,6 @@
     outline: 8px dashed var(--kv_orange);
     padding: 20px 40px 30px 40px;
     margin-bottom: 120px;
-
 }
 
 .cal section {

@@ -22,7 +22,7 @@
     color: var(--kv_orange);
 }
 
-
+/*--------main---------*/
 .container {
     display: flex;
     background-color: black;
@@ -30,6 +30,7 @@
     border-right: 8px dashed white;
 }
 
+/*-------左側三圖--------*/
 .container ul {
     padding: 0px 40px;
 }
@@ -56,51 +57,47 @@
     margin-top: 8px;
 }
 
-.container li {}
-
-.container li a {
+.banner a {
     display: block;
     width: 400px;
     height: 150px;
     border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.container li:nth-child(1) a {
+.banner:nth-child(1) a {
     background-image: url(../img/02buyTicket/banner/buyTicket_banner_01.jpg);
     background-color: rgba(0, 0, 0, .5);
     background-blend-mode: multiply;
-    background-repeat: no-repeat;
     background-position: 50% 35%;
-    background-size: cover;
     margin-bottom: 8px;
-
+    transition: .5s;
 }
 
-.container li:nth-child(1) a:hover {
+.banner:nth-child(1) a:hover {
     background-color: transparent;
 }
 
-.container li:nth-child(2) a {
+.banner:nth-child(2) a {
     background-image: url(../img/02buyTicket/banner/buyTicket_banner_02.jpg);
-    background-repeat: no-repeat;
     background-position: 50% 25%;
-    background-size: cover;
     margin-bottom: 8px;
 }
 
-.container li:nth-child(3) a {
+.banner:nth-child(3) a {
     background-image: url(../img/02buyTicket/banner/buyTicket_banner_03.jpg);
     background-color: rgba(0, 0, 0, .5);
     background-blend-mode: multiply;
-    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    transition: .5s;
 }
 
-.container li:nth-child(3) a:hover {
+.banner:nth-child(3) a:hover {
     background-color: transparent;
 }
 
+/*-------右側資訊--------*/
 .container section {
     flex-grow: 1;
     display: flex;
@@ -124,13 +121,10 @@
     margin-bottom: 20px;
 }
 
-.container section a {}
-
 .container section div:nth-child(2) {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-
     align-self: flex-start;
 }
 
@@ -166,8 +160,6 @@
     accent-color: var(--kv_orange);
 }
 
-.container section table tr {}
-
 .container section table td {
     width: 100px;
 }
@@ -185,11 +177,9 @@
     align-items: flex-end;
 }
 
-
 .container section div:nth-child(5) h3 {
     padding: 8px;
 }
-
 
 .container section>a {
     margin-top: 20px;

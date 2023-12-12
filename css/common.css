@@ -1,19 +1,21 @@
 @import url('reset.css');
 
 :root {
+    /*提示色*/
     --kv_blue: #4980EB;
+    /*輔助灰階色*/
     --kv_gray: #D9D9D9;
+    /*主色*/
     --kv_orange: #FA8801;
+    /*第二主色*/
     --kv_red: #E23939;
 }
-
 
 body {
     font-size: 16px;
     background-color: black;
     color: white;
     font-family: 'Inter', 'Noto Sans TC', sans-serif;
-
     text-align: center;
 }
 
@@ -32,8 +34,6 @@ h3 {
 h6 {
     font-size: 60px;
 }
-
-
 
 /*-------滿版-------*/
 .full {
@@ -61,10 +61,7 @@ h6 {
     position: relative;
 }
 
-
 /*----------header-----------*/
-
-
 .header {
     font-family: 'Aoboshi One', serif;
     position: fixed;
@@ -84,25 +81,19 @@ h6 {
     background-color: rgba(0, 0, 0, .6);
 }
 
+/*僅主頁header需加*/
 .index {
     background-color: rgba(0, 0, 0, .6);
 }
 
-
-
-
-.header img {}
-
 .header ul {
     display: flex;
     width: 900px;
-
 }
 
 .index ul {
     display: flex;
     width: 800px;
-
 }
 
 .header li {
@@ -110,12 +101,9 @@ h6 {
     flex-grow: 1;
 }
 
-
-
 .header li:nth-last-child(2) {
     flex-grow: 2;
 }
-
 
 .header li:nth-last-child(6) {
     flex-grow: 1.5;
@@ -135,7 +123,6 @@ h6 {
     text-decoration: none;
     color: var(--kv_gray);
     line-height: 60px;
-
 }
 
 .header ul li .page_home {
@@ -158,7 +145,7 @@ h6 {
     border: none;
 }
 
-/*-----------hover 才出現的選單----------*/
+/*-----------hover 才出現的次選單----------*/
 
 .header li:nth-last-child(4):hover .hidden {
     display: block;
@@ -174,7 +161,6 @@ h6 {
     flex-direction: column;
     top: 82px;
     right: -265px;
-
 }
 
 .header .other_hidden ul {
@@ -197,7 +183,6 @@ h6 {
     line-height: 50px;
     text-align: left;
     padding: 0 20px;
-
 }
 
 .header .hidden li a:hover {
@@ -206,13 +191,8 @@ h6 {
     color: black;
 }
 
-
-
-
-
-/*-------footer--------*/
+/*---------------footer-------------------*/
 .footer {
-
     width: 100%;
     padding: 20px 40px;
     height: 100px;
@@ -220,10 +200,7 @@ h6 {
     background-color: rgba(36, 36, 36, 0.8);
     display: flex;
     justify-content: space-between;
-
 }
-
-
 
 .footer .concern {
     display: flex;
@@ -241,14 +218,11 @@ h6 {
     align-items: center;
 }
 
-.footer li {}
-
 .footer li a {
     display: block;
     text-decoration: none;
     color: var(--kv_gray);
 }
-
 
 .footer .about {
     width: 500px;
@@ -278,13 +252,10 @@ h6 {
     padding-left: 100px;
     width: 40%;
     justify-content: flex-end;
-
 }
 
-.footer .social_media li {}
 
 .footer .social_media li a {
-    /* outline: 3px solid orange; */
     width: 80px;
     height: 80px;
     border-radius: 50%;

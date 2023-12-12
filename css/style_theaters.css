@@ -6,6 +6,8 @@
     margin-bottom: 80px;
 }
 
+/*-------map card-------*/
+
 .card_pool {
     display: flex;
     flex-direction: column;
@@ -57,7 +59,6 @@
     top: 60px;
     width: 60px;
 }
-
 
 .btn_bar {
     display: flex;

@@ -1,3 +1,5 @@
+/*---這一份放"不是所有頁面都會用到的"元件---*/
+
 .kv_title {
     background-color: var(--kv_orange);
     display: inline-block;
@@ -6,11 +8,9 @@
     letter-spacing: 4px;
     color: black;
     padding-bottom: 12px;
-
 }
 
-
-/*寫在a標籤上*/
+/*---寫在a標籤上---*/
 .btn {
     display: block;
     text-decoration: none;
@@ -113,7 +113,6 @@
     color: var(--kv_blue);
 }
 
-
 .btn_icon_mega,
 .btn_icon_imax {
     display: flex;
@@ -137,10 +136,7 @@
     margin-right: 4px;
 }
 
-
-
-
-/*-----------Ticket button bar-------------*/
+/*-----------Ticket button bar(訂票流程限定)-------------*/
 
 .Tbtn_bar {
     display: flex;
@@ -157,8 +153,6 @@
 .Tbtn_bar div button {
     margin-right: 20px;
 }
-
-
 
 /*----------nums selector-----------*/
 .nums_select {
@@ -224,13 +218,10 @@
     margin-bottom: 20px;
 }
 
-
-
 .login .pd {
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
-
 }
 
 .login .user input:focus,
@@ -315,7 +306,7 @@
     width: 60px;
 }
 
-/*-------button----------*/
+/*-------button的滑鼠指標改變----------*/
 button {
     cursor: pointer;
 }

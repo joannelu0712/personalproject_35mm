@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <div class="header">
         <img src="../img/logo/logo_gray.png" alt="">
         <ul>
@@ -37,6 +38,7 @@
             <li><a href="../webPage/member.html">Login</a></li>
         </ul>
     </div>
+    <!-- 上方滿版圖 -->
     <div class="top full">
         <section>
             <div>
@@ -46,17 +48,10 @@
             <h2 class="kv_title">重映許願池</h2>
         </section>
     </div>
-
-
+    <!-- 下方文字雲滿版圖 -->
     <h2>來看看大家都許願了些什麼......</h2>
     <div class="bottom full"></div>
-
-
-
-
-
-
-
+    <!-- footer -->
     <div class="footer">
         <div class="concern">
             <ul class="about">
@@ -77,22 +72,17 @@
             <li><a href="#"></a></li>
         </ul>
     </div>
-
+    <!-- 許願池輸入框JS -->
     <script>
-
         let wishes = document.getElementsByTagName('input')[0];
-
         let submit_rel = document.getElementsByClassName('btn_submit')[0];
         submit_rel.addEventListener('click', function () {
-
             if (wishes.value !== "") {
                 alert(`35mm許願池已收到您的願望!希望${wishes.value.trim()}能早日在大銀幕與影迷們見面`);
                 wishes.value = '';
             } else {
                 alert("要確實許願，願望才會成真噢!")
             }
-
-
         });
     </script>
 </body>

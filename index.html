@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+    <!-- header -->
     <div class="header index">
         <img src="./img/logo/logo_gray.png" alt="">
         <ul>
@@ -37,13 +37,14 @@
             <li><a href="webPage/member.html">Login</a></li>
         </ul>
     </div>
-
+    <!-- 上方滿版圖 -->
     <div class="top full" style="background-image: url(img/01mainpage/main_top/main_fullscreen_00.jpg);">
         <div class="additional">
             <h6>Lady Bird (2017)</h6>
             <p>淑女鳥</p>
         </div>
     </div>
+    <!-- hover bar -->
     <div class="hover_bar">
         <ul>
             <li><a href="#">
@@ -80,7 +81,9 @@
                 </a></li>
         </ul>
     </div>
+    <!-- main -->
     <div class="wrapper">
+        <!-- 不規則圖 -->
         <div class="irregular">
             <img src="img/01mainpage/main_irregular/main_irregular_lefttop.jpg" alt="">
             <img src="img/01mainpage/main_irregular/main_irregular_leftbottom.jpg" alt="">
@@ -88,15 +91,16 @@
             <img src="img/01mainpage/main_irregular/main_irregular_right.jpg" alt="">
             <h6>Now Playing</h6>
         </div>
+        <!-- 食物廣告 -->
         <div class="food_ad">
             <img src="img/01mainpage/main_popcorn.jpg" alt="">
-
             <section>
                 <h6>Good Taste in Movies</h6>
                 <h3>經典不變的食感，裹上香濃滑順的焦糖糖衣，陪影迷度過影格間的片刻永恆。</h3>
                 <a href="#" class="btn">Foods & Drinks</a>
             </section>
         </div>
+        <!-- ticket price -->
         <div class="price">
             <h6>Ticket Price</h6>
             <div class="container">
@@ -156,10 +160,8 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
+    <!-- 下方滿版圖 & 外部連結 -->
     <div class="bottom full">
         <h1>External Links</h1>
         <div class="container">
@@ -193,15 +195,13 @@
                     <a href="https://variety.com/" class="btn btn_orange" target="_blank">link</a>
                 </li>
                 <li>
-
                     <a href="https://www.kinejun.com/" target="_blank"></a>
-
                     <a href="https://www.kinejun.com/" class="btn btn_orange" target="_blank">link</a>
                 </li>
             </ul>
         </div>
-
     </div>
+    <!-- footer -->
     <div class="footer">
         <div class="concern">
             <ul class="about">
@@ -222,26 +222,20 @@
             <li><a href="#"></a></li>
         </ul>
     </div>
-
+    <!-- JS for hover bar and top full -->
     <script>
-
-        /*-------hover bar-----------*/
         const movieName = ["Days of Heaven (1978)", "Blue Velvet (1986)", "Drive My Car (2021)", "Das Boot (1981)", "Mississipi Burning (1988)", "The Last Picture Show (1971)", "Stand By Me (1986)", "Blade Runner: The Final Cut (1982)"];
         const movieText = ["天堂之日", "藍絲絨", "在車上", "從海底出擊", "烈血大風暴", "最後一場電影", "站在我這邊", "銀翼殺手: 終極版"];
         let changeTop = document.getElementsByClassName('top')[0];
         let changeName = document.getElementsByClassName('additional')[0].firstElementChild;
         let changeText = document.getElementsByClassName('additional')[0].lastElementChild;
         let hover_relDefault = document.getElementsByClassName('index')[0];
-
         hover_relDefault.addEventListener('mouseover', function () {
-
             changeTop.setAttribute("style", "background-image: url(img/01mainpage/main_top/main_fullscreen_00.jpg);");
             changeName.innerText = "Lady Bird (2017)";
             changeText.innerText = "淑女鳥";
         })
-
         for (let i = 0; i < 8; i++) {
-
             let hover_rel = document.getElementsByClassName("hover_bar")[0].getElementsByTagName("a")[i];
             hover_rel.addEventListener('mouseover', function () {
                 let n = i + 1;
@@ -250,19 +244,7 @@
                 changeName.innerText = movieName[i];
                 changeText.innerText = movieText[i];
             });
-
-
         }
-
-        changeText.addEventListener('click', function () {
-            alert('222');
-        });
-
-        /*---------滿版圖說明文字------------*/
-
-
-
-
     </script>
 </body>
 
