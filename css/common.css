@@ -86,6 +86,15 @@ h6 {
     background-color: rgba(0, 0, 0, .6);
 }
 
+.header>a {
+    background-image: url('../img/logo/logo_gray.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 60px;
+    width: 60px;
+}
+
 .header ul {
     display: flex;
     width: 900px;
