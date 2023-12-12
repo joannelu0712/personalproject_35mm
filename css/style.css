@@ -133,6 +133,10 @@ h6 {
     display: flex;
 }
 
+.food_ad img {
+    height: 100%;
+}
+
 .food_ad section {
     display: flex;
     flex-direction: column;
