@@ -78,12 +78,12 @@ h6 {
 }
 
 .header:hover {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .7);
 }
 
 /*僅主頁header需加*/
 .index {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .header>a {
