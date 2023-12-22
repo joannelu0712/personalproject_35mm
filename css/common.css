@@ -211,16 +211,7 @@ h6 {
     justify-content: space-between;
 }
 
-.footer .concern {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-}
 
-.footer .concern p {
-    font-size: 12px;
-    text-align: left;
-}
 
 .footer ul {
     display: flex;
@@ -235,6 +226,11 @@ h6 {
 
 .footer .about {
     width: 500px;
+
+}
+
+.footer~div {
+    font-size: 20px;
 }
 
 .footer .about li {
@@ -294,4 +290,135 @@ h6 {
 
 .footer .social_media li:nth-child(4) a {
     background-position: -238px 0px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1100px) {
+    .footer~div {
+        font-size: 12px;
+    }
+
+    .footer .social_media li a {
+        margin-right: 10px;
+    }
+
+
+    .footer .social_media li a {
+        margin-right: 10px;
+        width: 64px;
+        height: 64px;
+        background-size: cover;
+    }
+
+    .footer .social_media li:nth-child(1) a {
+        background-position: 0px 0px;
+    }
+
+    .footer .social_media li:nth-child(2) a {
+        background-position: -64px 0px;
+    }
+
+    .footer .social_media li:nth-child(3) a {
+        background-position: -128px 0px;
+    }
+
+    .footer .social_media li:nth-child(4) a {
+        background-position: -190px 0px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .footer {
+        padding: 20px 20px;
+    }
+
+    .footer .concern {
+        width: 400px;
+    }
+
+    .footer .about {
+        width: 100%;
+    }
+
+    .footer .about li a {
+        font-size: 12px
+    }
+
+
+
+}
+
+@media screen and (max-width:780px) {
+    .footer .concern {
+        width: 300px;
+    }
+
+    .footer .about {
+        width: 100%;
+    }
+
+
+
+    .footer .social_media li a {
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+    }
+
+    .footer .social_media li:nth-child(1) a {
+        background-position: 0px 0px;
+    }
+
+    .footer .social_media li:nth-child(2) a {
+        background-position: -40px 0px;
+    }
+
+    .footer .social_media li:nth-child(3) a {
+        background-position: -80px 0px;
+    }
+
+    .footer .social_media li:nth-child(4) a {
+        background-position: -118px 0px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .footer img {
+        width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+
+    .footer .concern {
+        width: 250px;
+    }
+
+    .footer .about {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer .concern {
+        width: 100%;
+    }
+
+    .footer .social_media {
+        width: 100%;
+        padding: 0;
+        align-self: center;
+        justify-content: center;
+        margin-top: 8px;
+    }
 }

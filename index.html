@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/component.css">
     <link rel="stylesheet" href='./css/style.css'>
+    <link rel="stylesheet" href="./css/rwd/rwd.css">
 </head>
 
 <body>
     <!-- header -->
-    <div class="header index">
+    <!-- <div class="header index">
         <img src="./img/logo/logo_gray.png" alt="">
         <ul>
             <li><a href="webPage/ticket.html">See a Movie</a></li>
@@ -36,7 +37,7 @@
             <li><a href="#">Foods & Drinks</a></li>
             <li><a href="webPage/member.html">Login</a></li>
         </ul>
-    </div>
+    </div> -->
     <!-- 上方滿版圖 -->
     <div class="top full" style="background-image: url(img/01mainpage/main_top/main_fullscreen_00.jpg);">
         <div class="additional">
@@ -168,35 +169,33 @@
             <ul>
                 <li>
                     <a href="https://www.imdb.com/" target="_blank"></a>
-                    <a href="https://www.imdb.com/" class="btn btn_orange" target="_blank">link</a>
                 </li>
                 <li>
                     <a href="https://letterboxd.com/" target="_blank"></a>
-                    <a href="https://letterboxd.com/" class="btn btn_orange" target="_blank">link</a>
                 </li>
                 <li>
                     <a href="https://mubi.com/en/tw" target="_blank"></a>
-                    <a href="https://mubi.com/en/tw" class="btn btn_orange" target="_blank">link</a>
+
                 </li>
                 <li>
                     <a href="https://www.criterionchannel.com/browse" target="_blank"></a>
-                    <a href="https://www.criterionchannel.com/browse" class="btn btn_orange" target="_blank">link</a>
+
                 </li>
                 <li>
                     <a href="https://www.indiewire.com/" target="_blank"></a>
-                    <a href="https://www.indiewire.com/" class="btn btn_orange" target="_blank">link</a>
+
                 </li>
                 <li>
                     <a href="https://www.bfi.org.uk/sight-and-sound" target="_blank"></a>
-                    <a href="https://www.bfi.org.uk/sight-and-sound" class="btn btn_orange" target="_blank">link</a>
+
                 </li>
                 <li>
                     <a href="https://variety.com/" target="_blank"></a>
-                    <a href="https://variety.com/" class="btn btn_orange" target="_blank">link</a>
+
                 </li>
                 <li>
                     <a href="https://www.kinejun.com/" target="_blank"></a>
-                    <a href="https://www.kinejun.com/" class="btn btn_orange" target="_blank">link</a>
+
                 </li>
             </ul>
         </div>
@@ -210,9 +209,7 @@
                 <li><a href="#">版權聲明</a></li>
                 <li><a href="#">聯絡我們</a></li>
             </ul>
-            <div>
-                <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
-            </div>
+
         </div>
         <img src="./img/logo/logo_gray.png" alt="">
         <ul class="social_media">
@@ -222,6 +219,9 @@
             <li><a href="#"></a></li>
         </ul>
     </div>
+    <div>
+        <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+    </div>
     <!-- JS for hover bar and top full -->
     <script>
         const movieName = ["Days of Heaven (1978)", "Blue Velvet (1986)", "Drive My Car (2021)", "Das Boot (1981)", "Mississipi Burning (1988)", "The Last Picture Show (1971)", "Stand By Me (1986)", "Blade Runner: The Final Cut (1982)"];
@@ -230,17 +230,17 @@
         let changeName = document.getElementsByClassName('additional')[0].firstElementChild;
         let changeText = document.getElementsByClassName('additional')[0].lastElementChild;
         let hover_relDefault = document.getElementsByClassName('index')[0];
-        hover_relDefault.addEventListener('mouseover', function () {
-            changeTop.setAttribute("style", "background-image: url(img/01mainpage/main_top/main_fullscreen_00.jpg);");
-            changeName.innerText = "Lady Bird (2017)";
-            changeText.innerText = "淑女鳥";
-        })
+        // hover_relDefault.addEventListener('mouseover', function () {
+        //     changeTop.setAttribute("style", "background-image: url(img/01mainpage/main_top/main_fullscreen_00.jpg);");
+        //     changeName.innerText = "Lady Bird (2017)";
+        //     changeText.innerText = "淑女鳥";
+        // })
         for (let i = 0; i < 8; i++) {
             let hover_rel = document.getElementsByClassName("hover_bar")[0].getElementsByTagName("a")[i];
             hover_rel.addEventListener('mouseover', function () {
                 let n = i + 1;
                 // console.log(this);
-                changeTop.setAttribute("style", `background-image: url(img/01mainpage/main_top/main_top_0${n}.jpg);`);
+                changeTop.setAttribute("style", `background-image: url(img/01mainpage/main_top/main_top_0${n}_B.jpg);`);
                 changeName.innerText = movieName[i];
                 changeText.innerText = movieText[i];
             });

@@ -30,19 +30,19 @@ h6 {
 }
 
 /*------------main page hover bar---------------*/
+
 .hover_bar ul {
     display: flex;
     justify-content: space-evenly;
 }
 
 .hover_bar li {
-    height: 100px;
-    flex-basis: 180px;
+    /* height: 100px; */
+    /* flex-basis: 180px; */
 }
 
 .hover_bar li a {
     display: block;
-    width: 180px;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -59,7 +59,6 @@ h6 {
 
 .hover_bar li a:hover h5 {
     display: block;
-    animation: appear 2s ease-in-out 0s infinite forwards;
 }
 
 .hover_bar li h5 {
@@ -274,12 +273,13 @@ h6 {
     font-size: 48px;
     letter-spacing: 8px;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .bottom .container {
     margin: 0 auto;
     max-width: 1200px;
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 }
 
 .bottom .container ul {
@@ -313,14 +313,9 @@ h6 {
     outline: 8px dashed var(--kv_orange);
 }
 
-.bottom .container li a:last-child {
-    color: var(--kv_orange);
-    border-color: var(--kv_orange);
-}
 
-.bottom .container li a:last-child:hover {
-    box-shadow: inset 2px 2px 2px black;
-}
+
+
 
 .bottom .container li:nth-child(1) a:nth-child(1) {
     background-position: 0 0;

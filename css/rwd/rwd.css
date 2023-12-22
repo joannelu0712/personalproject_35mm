@@ -1,0 +1,488 @@
+@media screen and (max-width:1920px) {
+    .hover_bar ul {
+        /* overflow: auto; */
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .hover_bar ul {
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .top {
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .irregular {
+        margin-top: 80px;
+        height: 650px;
+    }
+
+    .irregular img:nth-child(1) {
+        width: 300px;
+        margin-left: 40px;
+        top: 40px;
+    }
+
+    .irregular img:nth-child(2) {
+        width: 200px;
+        margin-bottom: 140px;
+    }
+
+    .irregular img:nth-child(3) {
+        width: 250px;
+    }
+
+    .irregular img:nth-child(4) {
+        width: 250px;
+        margin-right: 100px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:950px) {
+    .irregular {
+        margin-top: 60px;
+        height: 600px;
+    }
+
+    .irregular img:nth-child(1) {
+        width: 240px;
+        margin-left: 80px;
+        top: 60px;
+    }
+
+    .irregular img:nth-child(2) {
+        width: 160px;
+        margin-bottom: 200px;
+    }
+
+    .irregular img:nth-child(3) {
+        width: 200px;
+    }
+
+    .irregular img:nth-child(4) {
+        width: 200px;
+        margin-right: 120px;
+    }
+
+    .irregular h6 {
+        font-size: 48px;
+        bottom: 20%;
+    }
+
+    .food_ad {
+        margin-top: 40px;
+    }
+
+    .food_ad img {
+        width: 400px;
+    }
+
+    .food_ad h6 {
+        font-size: 36px;
+        margin-top: 60px;
+    }
+
+    .food_ad h3 {
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+    .irregular {
+        margin-top: 40px;
+        height: 450px;
+    }
+
+    .irregular img:nth-child(1) {
+        width: 192px;
+        margin-left: 120px;
+        top: 60px;
+    }
+
+    .irregular img:nth-child(2) {
+        width: 128px;
+        margin-bottom: 80px;
+    }
+
+    .irregular img:nth-child(3) {
+        width: 160px;
+    }
+
+    .irregular img:nth-child(4) {
+        width: 160px;
+        margin-right: 150px;
+    }
+
+    .irregular h6 {
+        font-size: 36px;
+        bottom: 10%;
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    /* .irregular {
+        display: none;
+    } */
+    .irregular {
+        height: 400px;
+    }
+
+    .irregular img:nth-child(1) {
+        width: 144px;
+        margin-left: 120px;
+        top: 60px;
+    }
+
+    .irregular img:nth-child(2) {
+        width: 96px;
+        margin-bottom: 80px;
+    }
+
+    .irregular img:nth-child(3) {
+        width: 120px;
+    }
+
+    .irregular img:nth-child(4) {
+        width: 120px;
+        margin-right: 150px;
+    }
+
+    .irregular h6 {
+        bottom: 25%;
+    }
+
+
+    .price .container {
+        justify-content: center;
+        align-content: center;
+    }
+
+    .price .container .card_price {
+        margin-right: 10px;
+        margin-bottom: 20px;
+        width: 550px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 5px 0 10px;
+    }
+
+
+    .price h6 {
+        font-size: 40px;
+    }
+
+    .card_price section {
+        margin-bottom: 10px;
+        justify-content: flex-start;
+        margin-right: 10px;
+    }
+
+    .card_price section:first-child {
+        flex-grow: 1;
+    }
+
+    .card_price section h2 {
+        font-size: 16px;
+    }
+
+    .card_price section p:first-child {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .card_price a {
+        width: 48px;
+        height: 48px;
+    }
+
+    .card_price .normal {
+
+        background-position: 0 -2px;
+    }
+
+    .card_price .mega {
+        background-position: -48px 0px;
+    }
+
+    .card_price .imax {
+        background-position: -96px -0px;
+    }
+
+
+
+}
+
+@media screen and (max-width:720px) {
+    .top {
+        margin-top: 100px;
+        height: 55vh;
+    }
+
+    .hover_bar {
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+
+    .hover_bar ul {
+        flex-direction: column;
+        width: 80px;
+    }
+
+    .hover_bar li a:hover h5,
+    .hover_bar li a:hover::before {
+        display: none;
+    }
+
+
+    .bottom h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .bottom .container {
+
+        margin-bottom: 80px;
+    }
+
+
+
+
+    .food_ad img {
+        width: 300px;
+    }
+
+    .food_ad h6 {
+        margin-top: 40px;
+        font-size: 24px;
+    }
+
+    .food_ad h3 {
+        font-size: 16px;
+        margin-bottom: 60px;
+        line-height: 40px;
+    }
+
+    .food_ad a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .irregular {
+        height: 350px;
+    }
+
+    .irregular img:nth-child(1) {
+        width: 108px;
+        margin-left: 120px;
+        top: 60px;
+    }
+
+    .irregular img:nth-child(2) {
+        width: 72px;
+        margin-bottom: 120px;
+    }
+
+    .irregular img:nth-child(3) {
+        width: 90px;
+    }
+
+    .irregular img:nth-child(4) {
+        width: 90px;
+        margin-right: 150px;
+    }
+
+    .irregular h6 {
+        bottom: 20%;
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width:580px) {
+    .irregular {
+        height: 350px;
+    }
+
+    .irregular img:nth-child(1) {
+        width: 108px;
+        margin-left: 120px;
+        top: 60px;
+    }
+
+    .irregular img:nth-child(2) {
+        width: 72px;
+        margin-bottom: 120px;
+    }
+
+    .irregular img:nth-child(3) {
+        width: 90px;
+    }
+
+    .irregular img:nth-child(4) {
+        width: 90px;
+        margin-right: 150px;
+    }
+
+    .irregular h6 {
+        bottom: 20%;
+        font-size: 28px;
+    }
+
+
+
+
+    .price .container {
+        flex-direction: column;
+    }
+
+    .price .container .card_price {
+        margin-right: 10px;
+        margin-bottom: 20px;
+        width: 250px;
+
+        flex-direction: column;
+        padding: 10px 5px 0 10px;
+    }
+
+    .card_price section {
+        justify-content: end;
+    }
+
+    .price h6 {
+        font-size: 24px;
+    }
+
+
+
+    .food_ad img {
+        width: 200px;
+    }
+
+    .food_ad h6 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:530px) {
+    .top {
+        height: 35vh;
+    }
+
+    .top .additional h6 {
+        font-size: 20px;
+    }
+
+    .top .additional p {
+        font-size: 12px;
+    }
+
+    .hover_bar ul {
+        flex-direction: column;
+        width: 50px;
+    }
+
+    .food_ad a {
+        font-size: 10px;
+    }
+
+    .bottom h1 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .bottom .container {
+        margin-bottom: 40px;
+    }
+
+    .bottom .container li {
+        margin-top: 20px;
+        flex-basis: 125px;
+
+    }
+
+    .bottom .container li a:first-child {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+    .bottom .container li:nth-child(1) a:nth-child(1) {
+        background-position: 0 0;
+    }
+
+    .bottom .container li:nth-child(2) a:nth-child(1) {
+        background-position: -200px 0;
+    }
+
+    .bottom .container li:nth-child(3) a:nth-child(1) {
+        background-position: -400px 0;
+    }
+
+    .bottom .container li:nth-child(4) a:nth-child(1) {
+        background-position: -600px 0;
+    }
+
+    .bottom .container li:nth-child(5) a:nth-child(1) {
+        background-position: -800px 0;
+    }
+
+    .bottom .container li:nth-child(6) a:nth-child(1) {
+        background-position: -1000px 0;
+    }
+
+    .bottom .container li:nth-child(7) a:nth-child(1) {
+        background-position: -1200px 0;
+    }
+
+    .bottom .container li:nth-child(8) a:nth-child(1) {
+        background-position: -1400px 0;
+    }
+}
+
+
+@media screen and (max-width:530px) {
+
+
+
+
+
+    .food_ad img {
+        width: 150px;
+    }
+
+    .food_ad h6 {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .food_ad h3 {
+        font-size: 12px;
+        margin-bottom: 40px;
+        line-height: 28px;
+    }
+}
