@@ -1,4 +1,4 @@
-/*---------home button lightbox----------*/
+/*---------other pages home button lightbox----------*/
 let lightbox_el = document.getElementsByClassName("lightbox")[0];
 let home_rel = document.getElementsByClassName("btn_blue")[0];
 home_rel.addEventListener("click", function () {

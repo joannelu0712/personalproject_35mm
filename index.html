@@ -13,14 +13,17 @@
     <link rel="stylesheet" href="./css/component.css">
     <link rel="stylesheet" href='./css/style.css'>
     <link rel="stylesheet" href="./css/rwd/rwd.css">
+    <script src="https://kit.fontawesome.com/a7a16df63a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <!-- header -->
-    <!-- <div class="header index">
+    <div class="header index">
         <img src="./img/logo/logo_gray.png" alt="">
-        <ul>
-            <li><a href="webPage/ticket.html">See a Movie</a></li>
+        <i class="fa-solid fa-bars"></i>
+        <ul class="-off">
+            <li class="ticket"><a href='#'>See a Movie</a></li>
             <li><a href="webPage/showtimes.html">Showtimes</a></li>
             <li>
                 <a href="webPage/movies.html">
@@ -28,8 +31,8 @@
                 </a>
                 <section class="hidden">
                     <ul>
-                        <li><a href="./webPage/movies.html">電影總覽</a></li>
-                        <li><a href="./webPage/pond.html">重映許願池</a></li>
+                        <li><a href="./webPage/movies.html">All Movies</a></li>
+                        <li><a href="./webPage/pond.html">Wishing Pond</a></li>
                     </ul>
                 </section>
             </li>
@@ -37,7 +40,7 @@
             <li><a href="#">Foods & Drinks</a></li>
             <li><a href="webPage/member.html">Login</a></li>
         </ul>
-    </div> -->
+    </div>
     <!-- 上方滿版圖 -->
     <div class="top full" style="background-image: url(img/01mainpage/main_top/main_fullscreen_00.jpg);">
         <div class="additional">
@@ -200,7 +203,7 @@
             </ul>
         </div>
     </div>
-    <!-- footer -->
+    <!-- footer  1222:要記得貼到其他頁！！！-->
     <div class="footer">
         <div class="concern">
             <ul class="about">
@@ -222,7 +225,106 @@
     <div>
         <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
     </div>
+
+    <!-- lightbox for ticket -->
+    <div class="lightbox none">
+        <div class="wrapper popup">
+            <h2 class="kv_title">立即訂票</h2>
+            <div class="container">
+                <!-- 左方－選擇電影 -->
+                <ul>
+                    <li class="banner"><a href="#"></a></li>
+                    <li class="banner"><a href="#"></a></li>
+                    <li class="banner"><a href="#"></a></li>
+                    <li class="banner"><a href="#"></a></li>
+                    <li class="banner"><a href="#"></a></li>
+                    <li class="banner"><a href="#"></a></li>
+                    <li class="banner"><a href="#"></a></li>
+                    <li class="banner"><a href="#"></a></li>
+                    <li class="banner"><a href="#"></a></li>
+                </ul>
+                <!-- 右方－訂票資訊 -->
+                <div>
+                    <div>
+                        <h3>選擇時間:</h3>
+                        <h3>2023 / 12 / 24</h3>
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    <div>
+                        <h3>選擇電影:</h3>
+                        <h3>藍絲絨</h3>
+                    </div>
+                    <div class="ticket_select">
+                        <section>
+                            <p>一般票</p>
+                            <div class="nums_select">
+                                <div class="bgbtn"></div>
+                                <h3>0</h3>
+                                <div class="bgbtn"></div>
+                            </div>
+                        </section>
+                        <section>
+                            <p>會員票</p>
+                            <div class="nums_select">
+                                <div class="bgbtn"></div>
+                                <h3>1</h3>
+                                <div class="bgbtn"></div>
+                            </div>
+                        </section>
+                        <section>
+                            <p>優待票</p>
+
+                            <div class="nums_select">
+                                <div class="bgbtn"></div>
+                                <h3>0</h3>
+                                <div class="bgbtn"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div>
+                        <p>總張數：</p>
+                        <p>1張</p>
+                    </div>
+                    <div class="radio">
+                        <table>
+                            <tr>
+                                <td><input type="radio" id="qingCheng" name="theater">
+                                    <label for="qingCheng">慶城</label>
+                                </td>
+                                <td><input type="radio" id="rongXing" name="theater">
+                                    <label for="rongXing">榮星</label>
+                                </td>
+                                <td><input type="radio" id="linSen" name="theater">
+                                    <label for="linSen">林森</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" id="jianCheng" name="theater">
+                                    <label for="jianCheng">建成</label>
+                                </td>
+                                <td><input type="radio" id="songShou" name="theater">
+                                    <label for="songShou">松壽</label>
+                                </td>
+                                <td><input type="radio" id="meiLun" name="theater">
+                                    <label for="meiLun">美崙</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="btn_block">
+                        <a href="#" class="btn btn_off">手動選位</a>
+                        <a href="#" class="btn btn_on">自動選位</a>
+                    </div>
+                    <a href="./webPage/seatConfirm.html" class="btn btn_submit">送出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- JS for hover bar and top full -->
+    <script src="js/topSelect.js"></script>
+    <script src="js/ticketLightbox.js"></script>
     <script>
         const movieName = ["Days of Heaven (1978)", "Blue Velvet (1986)", "Drive My Car (2021)", "Das Boot (1981)", "Mississipi Burning (1988)", "The Last Picture Show (1971)", "Stand By Me (1986)", "Blade Runner: The Final Cut (1982)"];
         const movieText = ["天堂之日", "藍絲絨", "在車上", "從海底出擊", "烈血大風暴", "最後一場電影", "站在我這邊", "銀翼殺手: 終極版"];

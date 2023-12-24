@@ -10,6 +10,16 @@
     padding-bottom: 12px;
 }
 
+/*-------假彈窗-------*/
+.popup {
+    width: 900px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-top: 8px;
+    position: relative;
+}
+
 /*---寫在a標籤上---*/
 .btn {
     display: block;
@@ -31,6 +41,7 @@
 }
 
 .btn_submit {
+    width: 120px;
     color: white;
     background-color: var(--kv_orange);
     border-color: var(--kv_orange);
@@ -103,6 +114,13 @@
     color: white;
     box-shadow: inset 2px 2px 2px #A71616;
     background-color: var(--kv_red);
+}
+
+.btn_off:hover {
+    border-color: var(--kv_red);
+    background-color: var(--kv_red);
+    box-shadow: inset 2px 2px 2px #A71616;
+    color: white;
 }
 
 .mega_red {
@@ -272,13 +290,14 @@
 
 .lightbox {
     position: fixed;
+    z-index: 5;
     top: 0px;
     left: 0;
     width: 100%;
     height: 100vh;
     background-color: hsla(0, 0%, 0%, .5);
     color: black;
-    padding-top: 120px;
+    padding-top: 90px;
 }
 
 .lightbox h2 {
@@ -299,7 +318,6 @@
 
 .lightbox .btn_bar .btn_blue {
     margin-right: 60px;
-    background-color: white;
 }
 
 .lightbox img {

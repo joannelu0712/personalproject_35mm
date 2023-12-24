@@ -71,6 +71,14 @@
     margin-left: 12px;
 }
 
+.dateLeft a:last-child:hover,
+.dateRight a:hover {
+    border-color: var(--kv_red);
+    background-color: var(--kv_red);
+    box-shadow: inset 2px 2px 2px #A71616;
+    color: white;
+}
+
 /*-----------many cards with timetable-------------*/
 .card_pool {
     display: flex;

@@ -1,0 +1,31 @@
+.wrapper {
+    max-width: 1000px;
+}
+
+.kv_title {
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+/*--------seat map---------*/
+.seatmap {
+    background-image: url('../img/02buyTicket/buyTicket_seatmap.png');
+    background-position: center center;
+    background-size: cover;
+    /* height: 600px; */
+    padding-top: 60%;
+}
+
+
+.Tbtn_bar a {
+    margin: 0 auto;
+    width: 20vw;
+}
+
+/* ----------RWD----------- */
+
+@media screen and (max-width:500px) {
+    .btn_submit {
+        font-size: 12px;
+    }
+}
