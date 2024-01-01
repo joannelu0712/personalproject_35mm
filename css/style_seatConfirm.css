@@ -21,11 +21,3 @@
     margin: 0 auto;
     width: 20vw;
 }
-
-/* ----------RWD----------- */
-
-@media screen and (max-width:500px) {
-    .btn_submit {
-        font-size: 12px;
-    }
-}

@@ -16,9 +16,11 @@ body {
 .wrapper img {
     width: 500px;
     margin-right: 40px;
+    margin-left: 20px;
 }
 
 .member_text {
+    margin-right: 20px;
     width: 500px;
     background-color: white;
     display: flex;

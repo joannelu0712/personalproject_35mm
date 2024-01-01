@@ -1,0 +1,62 @@
+/*--------RWD---------*/
+@media screen and (max-width:1200px) {
+    .full {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .full {
+        height: 60vh;
+    }
+
+    .top div {
+        bottom: 20%;
+    }
+
+    .top div input {
+        width: 200px;
+    }
+
+    .btn_submit {
+        width: 60px;
+    }
+
+    .kv_title {
+        font-size: 24px;
+        bottom: 12%;
+    }
+
+}
+
+@media screen and (max-width:530px) {
+    .full {
+        height: 40vh;
+    }
+
+    .top div {
+        bottom: 15%;
+    }
+
+    .top div input {
+        width: 160px;
+    }
+
+    .top div input {
+        padding-left: 8px;
+    }
+
+    .btn_submit {
+        width: 40px;
+        font-size: 12px;
+    }
+
+    .kv_title {
+        bottom: 5%;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

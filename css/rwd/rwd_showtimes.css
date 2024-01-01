@@ -1,0 +1,144 @@
+/*--------RWD---------*/
+
+@media screen and (max-width:1010px) {
+    .nav section {
+        margin-left: 20px;
+    }
+
+    .nav ul {
+        margin-right: 40px;
+    }
+
+    .card_pool {
+        justify-content: space-evenly;
+        margin: 80px 20px 0;
+    }
+
+    .card_showtimes:last-child {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width:710px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .nav section {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav ul {
+        margin-right: 0;
+    }
+
+    .nav li a {
+        margin: 0 16px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .btn_bar {
+        flex-direction: column;
+    }
+
+    .dateLeft {
+        margin-bottom: 10px;
+    }
+
+    .dateLeft,
+    .dateRight {
+        justify-content: center;
+    }
+
+    .btn_bar .btn_off {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .btn_bar a {
+        margin: 0;
+    }
+
+    .card_pool {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+
+    .card_showtimes {
+        flex-direction: row;
+        width: 400px;
+        height: 280px;
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    .card_showtimes img {
+        width: 168px;
+        height: 240px;
+        margin-bottom: 0;
+    }
+
+    .card_showtimes h3 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .card_showtimes img+div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        padding-right: 0;
+        margin-left: 20px;
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .card_showtimes img+div>div {
+
+        margin-top: 20px;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 60px;
+
+    }
+
+    .card_showtimes .timetable div {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .card_showtimes {
+        height: 240px;
+
+    }
+
+    .card_showtimes img {
+        width: 126px;
+        height: 180px;
+    }
+
+
+    .card_showtimes img+div>div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card_showtimes h3 {
+        font-size: 20px;
+
+    }
+
+    .card_showtimes>div>div p,
+    .timetable {
+        font-size: 12px;
+    }
+
+
+}

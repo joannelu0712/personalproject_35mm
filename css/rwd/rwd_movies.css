@@ -1,0 +1,160 @@
+/*--------RWD---------*/
+@media screen and (max-width:1150px) {
+    .swiper {
+        height: 480px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .side_bar {
+        top: 60px;
+    }
+
+}
+
+@media screen and (max-width:940px) {
+    .swiper {
+        height: 360px;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    body {
+        background-color: var(--kv_orange);
+    }
+
+    .header:hover {
+        background-color: var(--kv_orange);
+    }
+
+
+    .header>a {
+        background-image: url(../../img/logo/logo_mono.png);
+
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .side_bar {
+        width: 160px;
+    }
+
+    .side_bar li a {
+        padding: 40px 10px;
+        font-size: 20px;
+    }
+
+    /* 捲軸寬度 */
+    .side_bar::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .side_bar+div {
+        margin-left: 160px;
+    }
+
+    .card_pool {
+        background-color: black;
+        margin-top: 60px;
+        padding-top: 40px;
+
+        padding: 0;
+    }
+
+    .card_movie {
+        padding: 10px;
+        outline: 4px dashed var(--kv_orange);
+        margin: 10px 0 10px 20px;
+    }
+
+    .card_movie h3 {
+        font-size: 20px;
+    }
+
+    .card_movie h3+p {
+        font-size: 12px;
+    }
+
+    .card_movie img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .footer,
+    .footer+div {
+        background-color: black;
+    }
+
+    .footer+div {
+        border-bottom: 4px solid black;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .side_bar {
+        width: 120px;
+
+
+
+    }
+
+    .side_bar+div {
+        margin-left: 120px;
+    }
+
+    .side_bar li a {
+        font-size: 16px;
+    }
+
+    .card_movie {
+        padding: 10px;
+    }
+
+
+    .card_movie h3 {
+        font-size: 16px;
+    }
+
+    .card_movie h3+p {
+        font-size: 12px;
+    }
+
+    .card_movie img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .card_pool {
+        justify-content: center;
+    }
+
+    .card_movie {
+        display: flex;
+        width: 250px;
+        justify-content: space-between;
+        margin: 20px 10px
+    }
+
+    .card_movie div {
+        padding-top: 10px;
+        padding-left: 4px;
+        margin: 0;
+    }
+
+    .card_movie h3 {
+        margin-bottom: 30px;
+    }
+
+    .card_movie img {
+        width: 100px;
+        height: 100px;
+        align-self: center;
+    }
+}

@@ -9,11 +9,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Inter:wght@500;700&family=Noto+Sans+TC:wght@500;700&display=swap"
         rel="stylesheet">
+    <!-- 唯一不需要燈箱的頁面 -->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/component.css">
     <link rel="stylesheet" href="../css/mini_ticket.css">
     <link rel="stylesheet" href="../css/style_seatConfirm.css">
+
+    <link rel="stylesheet" href="../css/rwd/rwd_common.css">
+    <link rel="stylesheet" href="../css/rwd/rwd_mini_ticket.css">
+    <link rel="stylesheet" href="../css/rwd/rwd_seatConfirm.css">
+
+
+
     <script src="https://kit.fontawesome.com/a7a16df63a.js" crossorigin="anonymous"></script>
+    <script src="../source/jquery-3.7.1.js"></script>
+    <script src="../source/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -91,9 +101,7 @@
                 <li><a href="#">版權聲明</a></li>
                 <li><a href="#">聯絡我們</a></li>
             </ul>
-            <div>
-                <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
-            </div>
+
         </div>
         <img src="../img/logo/logo_gray.png" alt="">
         <ul class="social_media">
@@ -102,21 +110,10 @@
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
         </ul>
-    </div>
-    <!-- light box -->
-    <div class="lightbox none">
-        <div class="wrapper popup">
-            <div class="container">
-                <h2 class="kv_title">確定要返回首頁嗎？</h2>
-                <h3>35mm將不保留您未結帳的訂單。</h3>
-                <div class="btn_bar">
 
-                    <a href="../index.html" class="btn btn_blue">Home</a>
-                    <button type="button" class="btn btn_black">繼續選購</button>
-                </div>
-                <img src="../img/logo/logo_black.png" alt="">
-            </div>
-        </div>
+    </div>
+    <div>
+        <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
     </div>
     <!-- JS -->
     <script src="../js/topSelect.js"></script>

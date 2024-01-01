@@ -11,8 +11,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
     <link rel="stylesheet" href="../css/style_showtimes.css">
+
+    <link rel="stylesheet" href="../css/rwd/rwd_common.css">
+    <link rel="stylesheet" href="../css/rwd/rwd_lightbox.css">
+    <link rel="stylesheet" href="../css/rwd/rwd_showtimes.css">
+
+
     <script src="https://kit.fontawesome.com/a7a16df63a.js" crossorigin="anonymous"></script>
+    <script src="../source/jquery-3.7.1.js"></script>
+    <script src="../source/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -20,7 +29,7 @@
     <div class="header">
         <a href="../index.html"></a>
         <i class="fa-solid fa-bars"></i>
-        <ul>
+        <ul class="-off">
             <li><a href="../index.html" class="page_home">Home</a></li>
             <li class="ticket"><a href="#">See a Movie</a></li>
             <li><a href="../webPage/showtimes.html" class="page_now">Showtimes</a></li>
@@ -48,9 +57,9 @@
                 <div class="date">
                     <p>11</p>
                     <p>/</p>
-                    <p>28</p>
+                    <p>29</p>
                 </div>
-                <p>Tue.</p>
+                <p>Wed.</p>
             </section>
             <ul>
                 <li><a href="#" class="active">慶城</a></li>
@@ -64,8 +73,8 @@
         <!-- 按鈕bar -->
         <div class="btn_bar">
             <div class="dateLeft">
-                <a href="#" class="btn btn_on">Today</a>
-                <a href="#" class="btn btn_off">Tomorrow</a>
+                <a href="#" class="btn btn_off">Today</a>
+                <a href="#" class="btn btn_on">Tomorrow</a>
             </div>
             <div class="dateRight">
                 <a href="#" class="btn btn_off">12/1 Fri.</a>
@@ -78,190 +87,210 @@
             <div class="card_showtimes">
                 <img src="../img/03time/time_01_yiyi.jpg" alt="">
                 <div>
-                    <h3>一一</h3>
-                    <p>Yi Yi</p>
-                    <p>173 mins</p>
+                    <div>
+                        <h3>一一</h3>
+                        <p>Yi Yi</p>
+                        <p>173 mins</p>
+                    </div>
+                    <section class="timetable">
+                        <div>
+                            <p>10:30~13:23</p>
+                            <p>A廳</p>
+                        </div>
+                        <div>
+                            <p>14:00~16:53</p>
+                            <p>A廳</p>
+                        </div>
+                    </section>
                 </div>
-                <section class="timetable">
-                    <div>
-                        <p>10:30~13:23</p>
-                        <p>A廳</p>
-                    </div>
-                    <div>
-                        <p>14:00~16:53</p>
-                        <p>A廳</p>
-                    </div>
-                </section>
             </div>
             <div class="card_showtimes">
                 <img src="../img/03time/time_02_blade.jpg" alt="">
                 <div>
-                    <h3>銀翼殺手：終極版</h3>
-                    <p>Blade Runner: The Final Cut</p>
-                    <p>117 mins</p>
+                    <div>
+                        <h3>銀翼殺手：終極版</h3>
+                        <p>Blade Runner: The Final Cut</p>
+                        <p>117 mins</p>
+                    </div>
+                    <section class="timetable">
+                        <div>
+                            <p>10:40~12:37</p>
+                            <p>B廳</p>
+                        </div>
+                        <div>
+                            <p>15:00~17:38</p>
+                            <p class="mega_red">MEGA廳</p>
+                        </div>
+                        <div>
+                            <p>18:20~20:58</p>
+                            <p class="mega_red">MEGA廳</p>
+                        </div>
+                    </section>
                 </div>
-                <section class="timetable">
-                    <div>
-                        <p>10:40~12:37</p>
-                        <p>B廳</p>
-                    </div>
-                    <div>
-                        <p>15:00~17:38</p>
-                        <p class="mega_red">MEGA廳</p>
-                    </div>
-                    <div>
-                        <p>18:20~20:58</p>
-                        <p class="mega_red">MEGA廳</p>
-                    </div>
-                </section>
             </div>
             <div class="card_showtimes">
                 <img src="../img/03time/time_03_blood.jpg" alt="">
                 <div>
-                    <h3>黑金企業</h3>
-                    <p>There Will Be Blood</p>
-                    <p>158 mins</p>
+                    <div>
+                        <h3>黑金企業</h3>
+                        <p>There Will Be Blood</p>
+                        <p>158 mins</p>
+                    </div>
+                    <section class="timetable">
+                        <div>
+                            <p>17:20~19:58</p>
+                            <p class="mega_red">MEGA廳</p>
+                        </div>
+                        <div>
+                            <p>18:00~20:38</p>
+                            <p>C廳</p>
+                        </div>
+                    </section>
                 </div>
-                <section class="timetable">
-                    <div>
-                        <p>17:20~19:58</p>
-                        <p class="mega_red">MEGA廳</p>
-                    </div>
-                    <div>
-                        <p>18:00~20:38</p>
-                        <p>C廳</p>
-                    </div>
-                </section>
             </div>
             <div class="card_showtimes">
                 <img src="../img/03time/time_04_missi.jpg" alt="">
                 <div>
-                    <h3>烈血大風暴</h3>
-                    <p>Mississipi Burning</p>
-                    <p>128 mins</p>
+                    <div>
+                        <h3>烈血大風暴</h3>
+                        <p>Mississipi Burning</p>
+                        <p>128 mins</p>
+                    </div>
+                    <section class="timetable">
+                        <div>
+                            <p>10:50~12:58</p>
+                            <p>C廳</p>
+                        </div>
+                        <div>
+                            <p>19:00~21:00</p>
+                            <p>B廳</p>
+                        </div>
+                    </section>
                 </div>
-                <section class="timetable">
-                    <div>
-                        <p>10:50~12:58</p>
-                        <p>C廳</p>
-                    </div>
-                    <div>
-                        <p>19:00~21:00</p>
-                        <p>B廳</p>
-                    </div>
-                </section>
             </div>
             <div class="card_showtimes">
                 <img src="../img/03time/time_05_god.jpg" alt="">
                 <div>
-                    <h3>教父</h3>
-                    <p>The Godfather</p>
-                    <p>175 mins</p>
+                    <div>
+                        <h3>教父</h3>
+                        <p>The Godfather</p>
+                        <p>175 mins</p>
+                    </div>
+                    <section class="timetable">
+                        <div>
+                            <p>11:30~14:25</p>
+                            <p class="mega_red">MEGA廳</p>
+                        </div>
+                        <div>
+                            <p>15:30~18:25</p>
+                            <p>B廳</p>
+                        </div>
+                        <div>
+                            <p>19:20~22:15</p>
+                            <p class="imax_blue">IMAX廳</p>
+                        </div>
+                    </section>
                 </div>
-                <section class="timetable">
-                    <div>
-                        <p>11:30~14:25</p>
-                        <p class="mega_red">MEGA廳</p>
-                    </div>
-                    <div>
-                        <p>15:30~18:25</p>
-                        <p>B廳</p>
-                    </div>
-                    <div>
-                        <p>19:20~22:15</p>
-                        <p class="imax_blue">IMAX廳</p>
-                    </div>
-                </section>
             </div>
             <div class="card_showtimes">
                 <img src="../img/03time/time_06_last.jpg" alt="">
                 <div>
-                    <h3>最後一場電影</h3>
-                    <p>The Last Picture Show</p>
-                    <p>119 mins</p>
+                    <div>
+                        <h3>最後一場電影</h3>
+                        <p>The Last Picture Show</p>
+                        <p>119 mins</p>
+                    </div>
+                    <section class="timetable">
+                        <div>
+                            <p>13:00~14:59</p>
+                            <p>B廳</p>
+                        </div>
+                        <div>
+                            <p>21:30~23:29</p>
+                            <p class="mega_red">MEGA廳</p>
+                        </div>
+                    </section>
                 </div>
-                <section class="timetable">
-                    <div>
-                        <p>13:00~14:59</p>
-                        <p>B廳</p>
-                    </div>
-                    <div>
-                        <p>21:30~23:29</p>
-                        <p class="mega_red">MEGA廳</p>
-                    </div>
-                </section>
             </div>
             <div class="card_showtimes">
                 <img src="../img/03time/time_07_blue.jpg" alt="">
                 <div>
-                    <h3>藍絲絨</h3>
-                    <p>Blue Velvet</p>
-                    <p>120 mins</p>
+                    <div>
+                        <h3>藍絲絨</h3>
+                        <p>Blue Velvet</p>
+                        <p>120 mins</p>
+                    </div>
+                    <section class="timetable">
+                        <div>
+                            <p>15:30~17:30</p>
+                            <p>C廳</p>
+                        </div>
+                        <div>
+                            <p>20:30~22:30</p>
+                            <p>A廳</p>
+                        </div>
+                    </section>
                 </div>
-                <section class="timetable">
-                    <div>
-                        <p>15:30~17:30</p>
-                        <p>C廳</p>
-                    </div>
-                    <div>
-                        <p>20:30~22:30</p>
-                        <p>A廳</p>
-                    </div>
-                </section>
             </div>
             <div class="card_showtimes">
                 <img src="../img/03time/time_08_cleo.jpg" alt="">
                 <div>
-                    <h3>五點到七點的克萊歐</h3>
-                    <p>Cléo de 5 à 7</p>
-                    <p>90 mins</p>
+                    <div>
+                        <h3>五點到七點的克萊歐</h3>
+                        <p>Cléo de 5 à 7</p>
+                        <p>90 mins</p>
+                    </div>
+                    <section class="timetable">
+                        <div>
+                            <p>13:30~15:00</p>
+                            <p>C廳</p>
+                        </div>
+                        <div>
+                            <p>21:40~23:10</p>
+                            <p>B廳</p>
+                        </div>
+                    </section>
                 </div>
-                <section class="timetable">
-                    <div>
-                        <p>13:30~15:00</p>
-                        <p>C廳</p>
-                    </div>
-                    <div>
-                        <p>21:40~23:10</p>
-                        <p>B廳</p>
-                    </div>
-                </section>
             </div>
             <div class="card_showtimes">
                 <img src="../img/03time/time_09_2001.jpg" alt="">
                 <div>
-                    <h3>2001 太空漫遊</h3>
-                    <p>2001: A Space Odyssey</p>
-                    <p>149 mins</p>
+                    <div>
+                        <h3>2001 太空漫遊</h3>
+                        <p>2001: A Space Odyssey</p>
+                        <p>149 mins</p>
+                    </div>
+                    <section class="timetable">
+                        <div>
+                            <p>12:00~14:29</p>
+                            <p class="imax_blue">IMAX廳</p>
+                        </div>
+                        <div>
+                            <p>21:00~23:29</p>
+                            <p>C廳</p>
+                        </div>
+                    </section>
                 </div>
-                <section class="timetable">
-                    <div>
-                        <p>12:00~14:29</p>
-                        <p class="imax_blue">IMAX廳</p>
-                    </div>
-                    <div>
-                        <p>21:00~23:29</p>
-                        <p>C廳</p>
-                    </div>
-                </section>
             </div>
             <div class="card_showtimes">
                 <img src="../img/03time/time_10_walle.jpg" alt="">
                 <div>
-                    <h3>瓦力</h3>
-                    <p>WALL‧E</p>
-                    <p>98 mins</p>
+                    <div>
+                        <h3>瓦力</h3>
+                        <p>WALL‧E</p>
+                        <p>98 mins</p>
+                    </div>
+                    <section class="timetable">
+                        <div>
+                            <p>15:10~16:48</p>
+                            <p class="imax_blue">IMAX廳</p>
+                        </div>
+                        <div>
+                            <p>17:20~18:58</p>
+                            <p class="imax_blue">IMAX廳</p>
+                        </div>
+                    </section>
                 </div>
-                <section class="timetable">
-                    <div>
-                        <p>15:10~16:48</p>
-                        <p class="imax_blue">IMAX廳</p>
-                    </div>
-                    <div>
-                        <p>17:20~18:58</p>
-                        <p class="imax_blue">IMAX廳</p>
-                    </div>
-                </section>
             </div>
         </div>
     </div>
@@ -274,9 +303,7 @@
                 <li><a href="#">版權聲明</a></li>
                 <li><a href="#">聯絡我們</a></li>
             </ul>
-            <div>
-                <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
-            </div>
+
         </div>
         <img src="../img/logo/logo_gray.png" alt="">
         <ul class="social_media">
@@ -286,6 +313,9 @@
             <li><a href="#"></a></li>
         </ul>
     </div>
+    <div>
+        <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+    </div>
     <!-- lightbox for ticket -->
     <div class="lightbox none">
         <div class="wrapper popup">
@@ -293,52 +323,54 @@
             <div class="container">
                 <!-- 左方－選擇電影 -->
                 <ul>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
                     <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
                 </ul>
                 <!-- 右方－訂票資訊 -->
                 <div>
                     <div>
                         <h3>選擇時間:</h3>
-                        <h3>2023 / 12 / 24</h3>
+                        <h3 id="cur_date">2023 / 11 / 29</h3>
                         <i class="fa-regular fa-calendar-days"></i>
                     </div>
                     <div>
                         <h3>選擇電影:</h3>
-                        <h3>藍絲絨</h3>
+                        <h3 id="film_name">藍絲絨</h3>
                     </div>
-                    <section>
-                        <p>一般票</p>
-                        <div class="nums_select">
-                            <div class="bgbtn"></div>
-                            <h3>0</h3>
-                            <div class="bgbtn"></div>
-                        </div>
-                    </section>
-                    <section>
-                        <p>會員票</p>
-                        <div class="nums_select">
-                            <div class="bgbtn"></div>
-                            <h3>1</h3>
-                            <div class="bgbtn"></div>
-                        </div>
-                    </section>
-                    <section>
-                        <p>優待票</p>
+                    <div class="ticket_select">
+                        <section>
+                            <p>一般票</p>
+                            <div class="nums_select">
+                                <div class="bgbtn"></div>
+                                <h3>0</h3>
+                                <div class="bgbtn"></div>
+                            </div>
+                        </section>
+                        <section>
+                            <p>會員票</p>
+                            <div class="nums_select">
+                                <div class="bgbtn"></div>
+                                <h3>1</h3>
+                                <div class="bgbtn"></div>
+                            </div>
+                        </section>
+                        <section>
+                            <p>優待票</p>
 
-                        <div class="nums_select">
-                            <div class="bgbtn"></div>
-                            <h3>0</h3>
-                            <div class="bgbtn"></div>
-                        </div>
-                    </section>
+                            <div class="nums_select">
+                                <div class="bgbtn"></div>
+                                <h3>0</h3>
+                                <div class="bgbtn"></div>
+                            </div>
+                        </section>
+                    </div>
                     <div>
                         <p>總張數：</p>
                         <p>1張</p>
@@ -373,7 +405,7 @@
                         <a href="#" class="btn btn_off">手動選位</a>
                         <a href="#" class="btn btn_on">自動選位</a>
                     </div>
-                    <a href="../webPage/ticket_2.html" class="btn btn_submit">送出</a>
+                    <a href="../webPage/seatConfirm.html" class="btn btn_submit">送出</a>
                 </div>
             </div>
         </div>
@@ -381,6 +413,7 @@
     <!-- JS -->
     <script src="../js/topSelect.js"></script>
     <script src="../js/ticketLightbox.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,79 @@
+/*------------RWD--------------*/
+@media screen and (max-width:900px) {
+
+    .mini_ticket {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .mini_ticket .img_title {
+        display: none;
+    }
+
+    .mini_ticket>section:first-child div {
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .mini_ticket .none {
+        display: block;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .mini_ticket .ticket .whitebgc {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .ticket .whitebgc:nth-child(3) section {
+        height: 60px;
+    }
+
+    .ticket .whitebgc:nth-child(3) section img {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    .kv_title {
+        font-size: 28px;
+    }
+
+    .mini_ticket .ticket div:first-child h3 {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .mini_ticket .ticket div:first-child .btn {
+        font-size: 12px;
+    }
+
+    .mini_ticket .ticket .whitebgc {
+        width: 280px;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .ticket .whitebgc:nth-child(3) section,
+    .ticket .whitebgc:nth-child(3) section+p {
+        line-height: 40px;
+        height: 40px;
+    }
+
+    .ticket .whitebgc:nth-child(3) section img {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Tbtn_bar {
+        font-size: 12px;
+    }
+}

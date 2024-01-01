@@ -1,3 +1,4 @@
+/*--------RWD---------*/
 @media screen and (max-width:1440px) {
     .hover_bar ul {
         justify-content: left;
@@ -35,13 +36,6 @@
         width: 250px;
         margin-right: 100px;
     }
-
-    .lightbox .container>div section p,
-    .lightbox .container .ticket_select+div p,
-    .lightbox label {
-        font-size: 20px;
-    }
-
 }
 
 
@@ -95,29 +89,17 @@
         margin-bottom: 80px;
     }
 
-}
+    .price .container {
+        justify-content: center;
 
-
-@media screen and (max-width:950px) {
-    .lightbox .wrapper {
-        width: 780px;
     }
 
-    .lightbox .container>div {
-        width: 45%;
+    .price .container>div {
+        margin-bottom: 0;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
-    .lightbox .container ul {
-        margin-right: 0px;
-        height: 500px;
-        overflow: scroll;
-        justify-content: flex-start;
-        padding-left: 100px;
-    }
-
-    .lightbox i {
-        font-size: 20px;
-    }
 }
 
 @media screen and (max-width:850px) {
@@ -152,37 +134,7 @@
     }
 }
 
-@media screen and (max-width:780px) {
-
-    .irregular {
-        height: 400px;
-    }
-
-    .irregular img:nth-child(1) {
-        width: 144px;
-        margin-left: 120px;
-        top: 60px;
-    }
-
-    .irregular img:nth-child(2) {
-        width: 96px;
-        margin-bottom: 80px;
-    }
-
-    .irregular img:nth-child(3) {
-        width: 120px;
-    }
-
-    .irregular img:nth-child(4) {
-        width: 120px;
-        margin-right: 150px;
-    }
-
-    .irregular h6 {
-        bottom: 25%;
-    }
-
-
+@media screen and (max-width:810px) {
     .price .container {
         justify-content: center;
         align-content: center;
@@ -238,28 +190,45 @@
     .card_price .imax {
         background-position: -96px -0px;
     }
+}
 
-    .lightbox .wrapper {
-        width: 600px;
+@media screen and (max-width:780px) {
+
+    .irregular {
+        height: 400px;
     }
 
-    .lightbox .container ul {
-        padding-left: 20px;
+    .irregular img:nth-child(1) {
+        width: 144px;
+        margin-left: 120px;
+        top: 60px;
     }
 
-    .lightbox .container>div {
-        width: 55%;
+    .irregular img:nth-child(2) {
+        width: 96px;
+        margin-bottom: 80px;
     }
 
-    .lightbox .container>div>div:first-child,
-    .lightbox .container>div>div:nth-child(2) {
-        padding-left: 10px;
+    .irregular img:nth-child(3) {
+        width: 120px;
     }
 
-    .lightbox i {
-        margin-left: 0;
-        margin-right: 8px;
+    .irregular img:nth-child(4) {
+        width: 120px;
+        margin-right: 150px;
     }
+
+    .irregular h6 {
+        bottom: 25%;
+    }
+
+    .food_ad {
+        margin-top: 20px;
+    }
+
+
+
+
 
 }
 
@@ -349,22 +318,6 @@
     }
 }
 
-@media screen and (max-width:620px) {
-    .lightbox .wrapper {
-        width: 480px;
-    }
-
-    .lightbox .container ul {
-        height: 430px;
-        overflow: scroll;
-    }
-
-    .lightbox .container ul+div {
-        margin-bottom: 0px;
-        width: 100%;
-    }
-
-}
 
 @media screen and (max-width:580px) {
     .irregular {
@@ -456,6 +409,10 @@
         width: 60px;
     }
 
+    .food_ad {
+        margin-top: 20px;
+    }
+
     .food_ad a {
         font-size: 12px;
     }
@@ -536,69 +493,6 @@
     }
 }
 
-@media screen and (max-width:500px) {
-    .lightbox {
-        padding-top: 40px;
-    }
-
-    .lightbox .kv_title {
-        font-size: 28px;
-    }
-
-    .lightbox .wrapper {
-        width: 350px;
-    }
-
-    .lightbox .container {
-        flex-direction: column;
-    }
-
-    .lightbox .container ul {
-        width: 100%;
-        height: auto;
-        flex-wrap: nowrap;
-        overflow: scroll;
-        padding-left: 0;
-        margin-bottom: 20px;
-    }
-
-    .lightbox .container ul li {
-        flex-shrink: 0;
-        width: 80px;
-        height: 80px;
-        margin-bottom: 20px
-    }
-
-    .lightbox .container ul+div {
-        padding-left: 20px;
-        box-sizing: border-box;
-    }
-
-    .lightbox .wrapper .container ul+div h3 {
-        font-size: 16px;
-    }
-
-
-    .lightbox .wrapper .ticket_select>section h3 {
-        padding: 4px;
-    }
-
-    .lightbox .container>div section p,
-    .lightbox .container .ticket_select+div p,
-    .lightbox label {
-        font-size: 16px;
-    }
-
-    .lightbox .btn {
-        font-size: 12px;
-    }
-
-    .lightbox .container>div>div:first-child,
-    .lightbox .container>div>div:nth-child(2) {
-        padding-left: 40px;
-    }
-
-}
 
 
 @media screen and (max-width:470px) {
@@ -634,4 +528,7 @@
         font-size: 20px;
     }
 
+    .food_ad {
+        margin-top: 80px;
+    }
 }

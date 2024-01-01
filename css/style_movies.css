@@ -1,33 +1,31 @@
-/*-------滿版圖---------*/
-.top {
-    width: 80%;
-    margin: 0 auto;
-    background-image: url(../img/04_1film/film_fullscreen.jpg);
+/* ------------swiper(carousel)------------- */
+.carousel {
     position: relative;
 }
 
-.top::before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border: 28px solid var(--kv_orange);
-    border-color: transparent var(--kv_orange) transparent transparent;
-    position: absolute;
-    left: -80px;
-    top: 50%;
+.swiper {
+    width: 100%;
+    height: 600px;
 }
 
-.top::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border: 28px solid var(--kv_orange);
-    border-color: transparent transparent transparent var(--kv_orange);
-    position: absolute;
-    right: -80px;
-    top: 50%;
+.swiper-slide img {
+    height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    bottom: 40%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--kv_gray);
 }
 
 /*---------滿版圖以下-------*/
@@ -45,21 +43,9 @@
     overflow-y: auto;
 }
 
-/* 捲軸底色 */
-.side_bar::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background-color: var(--kv_gray);
-}
-
-/* 捲軸寬度 */
-.side_bar::-webkit-scrollbar {
-    width: 8px;
-    background-color: black;
-}
-
 /* 捲軸本體顏色 */
 .side_bar::-webkit-scrollbar-thumb {
-    background-color: var(--kv_red);
+    background-color: var(--kv_gray);
 }
 
 .side_bar ul {

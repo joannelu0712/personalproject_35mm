@@ -14,8 +14,16 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
     <link rel="stylesheet" href="../css/style_theaters.css">
+
+    <link rel="stylesheet" href="../css/rwd/rwd_common.css">
+    <link rel="stylesheet" href="../css/rwd/rwd_lightbox.css">
+    <link rel="stylesheet" href="../css/rwd/rwd_theaters.css">
+
     <script src="https://kit.fontawesome.com/a7a16df63a.js" crossorigin="anonymous"></script>
+    <script src="../source/jquery-3.7.1.js"></script>
+    <script src="../source/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -23,7 +31,7 @@
     <div class="header">
         <a href="../index.html"></a>
         <i class="fa-solid fa-bars"></i>
-        <ul>
+        <ul class="-off">
             <li><a href="../index.html" class="page_home">Home</a></li>
             <li class="ticket"><a href="#">See a Movie</a></li>
             <li><a href="../webPage/showtimes.html">Showtimes</a></li>
@@ -166,9 +174,7 @@
                 <li><a href="#">版權聲明</a></li>
                 <li><a href="#">聯絡我們</a></li>
             </ul>
-            <div>
-                <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
-            </div>
+
         </div>
         <img src="../img/logo/logo_gray.png" alt="">
         <ul class="social_media">
@@ -178,6 +184,9 @@
             <li><a href="#"></a></li>
         </ul>
     </div>
+    <div>
+        <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+    </div>
     <!-- lightbox for ticket -->
     <div class="lightbox none">
         <div class="wrapper popup">
@@ -185,52 +194,54 @@
             <div class="container">
                 <!-- 左方－選擇電影 -->
                 <ul>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
                     <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
-                    <li class="banner"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
+                    <li class="banner -filter"><a href="#"></a></li>
                 </ul>
                 <!-- 右方－訂票資訊 -->
                 <div>
                     <div>
                         <h3>選擇時間:</h3>
-                        <h3>2023 / 12 / 24</h3>
+                        <h3>2023 / 11 / 29</h3>
                         <i class="fa-regular fa-calendar-days"></i>
                     </div>
                     <div>
                         <h3>選擇電影:</h3>
-                        <h3>藍絲絨</h3>
+                        <h3 id="film_name">藍絲絨</h3>
                     </div>
-                    <section>
-                        <p>一般票</p>
-                        <div class="nums_select">
-                            <div class="bgbtn"></div>
-                            <h3>0</h3>
-                            <div class="bgbtn"></div>
-                        </div>
-                    </section>
-                    <section>
-                        <p>會員票</p>
-                        <div class="nums_select">
-                            <div class="bgbtn"></div>
-                            <h3>1</h3>
-                            <div class="bgbtn"></div>
-                        </div>
-                    </section>
-                    <section>
-                        <p>優待票</p>
+                    <div class="ticket_select">
+                        <section>
+                            <p>一般票</p>
+                            <div class="nums_select">
+                                <div class="bgbtn"></div>
+                                <h3>0</h3>
+                                <div class="bgbtn"></div>
+                            </div>
+                        </section>
+                        <section>
+                            <p>會員票</p>
+                            <div class="nums_select">
+                                <div class="bgbtn"></div>
+                                <h3>1</h3>
+                                <div class="bgbtn"></div>
+                            </div>
+                        </section>
+                        <section>
+                            <p>優待票</p>
 
-                        <div class="nums_select">
-                            <div class="bgbtn"></div>
-                            <h3>0</h3>
-                            <div class="bgbtn"></div>
-                        </div>
-                    </section>
+                            <div class="nums_select">
+                                <div class="bgbtn"></div>
+                                <h3>0</h3>
+                                <div class="bgbtn"></div>
+                            </div>
+                        </section>
+                    </div>
                     <div>
                         <p>總張數：</p>
                         <p>1張</p>
@@ -265,7 +276,7 @@
                         <a href="#" class="btn btn_off">手動選位</a>
                         <a href="#" class="btn btn_on">自動選位</a>
                     </div>
-                    <a href="../webPage/ticket_2.html" class="btn btn_submit">送出</a>
+                    <a href="../webPage/seatConfirm.html" class="btn btn_submit">送出</a>
                 </div>
             </div>
         </div>
