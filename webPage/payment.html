@@ -56,7 +56,7 @@
         <h2 class="kv_title">訂單確認</h2>
         <div class="mini_ticket">
             <section>
-                <img class="img_title" src="../img/02buyTicket/buyTicket_movie.jpg" alt="">
+                <img class="img_title" src="../img/02buyTicket/buyTicket/buyTicket_movie_03.jpg" alt="">
                 <div>
                     <h3 class="none">選擇電影：</h3>
                     <h3 class="title">藍絲絨</h3>
@@ -99,7 +99,7 @@
         </div>
         <!-- payment -->
         <h2 class="kv_title">請選擇付款方式</h2>
-        <div class="btn_bar">
+        <div class="btn_bar money">
             <a href="#" class="btn btn_on">儲值金扣款</a>
             <a href="#" class="btn btn_off">信用卡</a>
             <a href="#" class="btn btn_off">第三方支付</a>
@@ -122,12 +122,27 @@
                 <p>扣款後剩餘儲值金</p>
             </section>
         </div>
+        <div class="login -off">
+            <form action="#" method="#" id="the_form">
+                <div class="group">
+                    <label>聯絡方式：</label>
+                    <input type="text" placeholder="手機號碼 / email">
+                </div>
+
+                <div class="group">
+                    <label>信用卡卡號：</label>
+                    <div>
+                        <input type="text" class="card" maxlength="4">
+                        <input type="text" class="card" maxlength="4">
+                        <input type="text" class="card" maxlength="4">
+                        <input type="text" class="card" maxlength="4">
+                    </div>
+                </div>
+
+            </form>
+        </div>
         <!-- button bar -->
         <div class="Tbtn_bar">
-            <!-- <div>
-                <button type="button" class="btn btn_blue">Home</button>
-                <a href="javascript:history.back()" class="btn">Back</a>
-            </div> -->
             <a href="./ticket_success.html" class="btn btn_submit">送出</a>
         </div>
     </div>
@@ -161,7 +176,7 @@
 
                 <h3>取票條碼與取餐序號<br>已寄送至會員email<br>
                     或可至35mm會員中心查詢</h3>
-                <p>沒有收到嗎？請洽35mm客服</p>
+                <p>沒有收到嗎?請洽35mm客服</p>
                 <div class="btn_bar">
                     <a href="../index.html" class="btn btn_blue">Home</a>
                     <a href="../webPage/member.html" class="btn">會員中心</a>
@@ -173,8 +188,42 @@
     <!-- JS -->
     <script src="../js/topSelect.js"></script>
     <script src="../js/ticketSuccess.js"></script>
+    <script src="../js/ticketStorage.js"></script>
     <script>
-        // alert('您已成功登入');
+        $(function () {
+            $('.btn_bar a').click(function (e) {
+                e.preventDefault();
+            })
+
+
+            let member = JSON.parse(localStorage.getItem("member"));
+            if (member.is_member == false) {
+                $('.money a:nth-child(1)').removeClass('btn_on').addClass('btn_ban')
+                $('.money a:nth-child(2)').removeClass('btn_off').addClass('btn_on')
+                $('.money a:nth-child(3)').removeClass('btn_off').addClass('btn_off')
+                $('.money a:nth-child(4)').removeClass('btn_off').addClass('btn_ban')
+
+                $('.cal').toggleClass('-off')
+                $('.login').toggleClass('-off')
+            } else {
+                alert('您已成功登入');
+                $('.money a:nth-child(1)').click(function () {
+                    $('.cal').toggleClass('-off')
+                    $('.login').toggleClass('-off')
+                    $(this).removeClass('btn_off').toggleClass('btn_on')
+                    $(this).next().addClass('btn_off').toggleClass('btn_on')
+                })
+                $('.money a:nth-child(2)').click(function () {
+                    $('.cal').toggleClass('-off')
+                    $('.login').toggleClass('-off')
+                    $(this).removeClass('btn_off').toggleClass('btn_on')
+                    $(this).prev().addClass('btn_off').toggleClass('btn_on')
+                })
+
+            }
+
+
+        })
     </script>
 </body>
 

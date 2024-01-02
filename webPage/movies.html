@@ -59,7 +59,6 @@
 
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-                <!-- 圖片記得重做 -->
                 <div class="swiper-slide"><img src="../img/04_1film/carousel/carousel_01.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="../img/04_1film/carousel/carousel_02.png" alt=""></div>
                 <div class="swiper-slide"><img src="../img/04_1film/carousel/carousel_03.png" alt=""></div>
@@ -317,8 +316,11 @@
                 prevEl: '.swiper-button-prev',
             }
         }
-
         )
+
+        $('.side_bar a').click(function (e) {
+            e.preventDefault();
+        })
     </script>
 </body>
 

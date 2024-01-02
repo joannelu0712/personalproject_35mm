@@ -3,6 +3,11 @@
     .full {
         height: 80vh;
     }
+
+    .btn_submit {
+        width: 80px;
+    }
+
 }
 
 @media screen and (max-width:740px) {
@@ -16,6 +21,10 @@
 
     .top div input {
         width: 200px;
+    }
+
+    .top div input::-webkit-input-placeholder {
+        font-size: 12px;
     }
 
     .btn_submit {
@@ -40,9 +49,6 @@
 
     .top div input {
         width: 160px;
-    }
-
-    .top div input {
         padding-left: 8px;
     }
 

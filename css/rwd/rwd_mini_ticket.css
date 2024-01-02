@@ -20,6 +20,10 @@
         display: block;
         font-size: 16px;
     }
+
+    .check section p:last-child {
+        padding-right: 60px;
+    }
 }
 
 @media screen and (max-width:640px) {
@@ -37,6 +41,9 @@
         margin-right: 10px;
     }
 
+    .check section p:last-child {
+        padding-right: 40px;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -75,5 +82,10 @@
 
     .Tbtn_bar {
         font-size: 12px;
+    }
+
+    .mini_ticket .ticket,
+    .mini_ticket .check {
+        width: 80%;
     }
 }

@@ -55,7 +55,7 @@
         <h2 class="kv_title">餐飲加點</h2>
         <div class="mini_ticket">
             <section>
-                <img class="img_title" src="../img/02buyTicket/buyTicket_movie.jpg" alt="">
+                <img class="img_title" src="../img/02buyTicket/buyTicket/buyTicket_movie_03.jpg" alt="">
                 <div>
                     <h3 class="none">選擇電影：</h3>
                     <h3 class="title">藍絲絨</h3>
@@ -178,7 +178,7 @@
             <!-- <h2 class="kv_title">請登入會員</h2> -->
             <div class="container">
                 <h3>請登入35mm會員以完成訂票程序。</h3>
-                <h3>還不是會員？<a href="#">點我註冊</a></h3>
+                <h3>還不是會員？<a href="payment.html" id="notMember">點此完成非會員購票手續</a></h3>
                 <div class="login">
                     <div class="user">
                         <label for="user">帳號：</label>
@@ -191,35 +191,29 @@
                     <a href="#">忘記密碼</a>
                     <a href="payment.html" class="btn_submit btn">提交</a>
                 </div>
-                <!-- <div class="btn_bar">
-                    <button type="button" class="btn btn_blue">Home</button>
-                    <a href="#" class="btn">註冊會員</a>
-                </div> -->
                 <img src="../img/logo/logo_gray.png" alt="">
             </div>
         </div>
     </div>
 
-
-
-
-
-    <!-- <div class="lightbox none">
-        <div class="wrapper popup">
-            <div class="container">
-                <h2 class="kv_title">確定要返回首頁嗎？</h2>
-                <h3>35mm將不保留您未結帳的訂單。</h3>
-                <div class="btn_bar">
-                    <a href="../index.html" class="btn btn_blue">Home</a>
-                    <button type="button" class="btn btn_black">繼續選購</button>
-                </div>
-                <img src="../img/logo/logo_black.png" alt="">
-            </div>
-        </div>
-    </div> -->
     <!-- JS -->
     <script src="../js/topSelect.js"></script>
     <script src="../js/ticketLogin.js"></script>
+    <script src="../js/ticketStorage.js"></script>
+    <script>
+        $('#notMember').click(function () {
+            let member = {
+                is_member: false
+            };
+            localStorage.setItem("member", JSON.stringify(member));
+        })
+        $('.lightbox .btn_submit').click(function () {
+            let member = {
+                is_member: true
+            };
+            localStorage.setItem("member", JSON.stringify(member));
+        })
+    </script>
 </body>
 
 </html>

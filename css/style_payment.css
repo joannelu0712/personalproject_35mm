@@ -26,12 +26,29 @@
 
 .mini_ticket .ticket {
     margin-bottom: 40px;
+    width: 90%;
+}
+
+.ticket div:first-child {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.ticket .whitebgc {
+    flex-direction: row;
+}
+
+.ticket .whitebgc p {
+    align-self: center;
 }
 
 /*------mini ticket 訂單詳細內容區塊---------*/
 .check {
     text-align: left;
     font-size: 20px;
+    width: 90%;
+
 }
 
 .check h3 {
@@ -41,6 +58,7 @@
 }
 
 .check section {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
@@ -50,11 +68,16 @@
     padding-left: 20px;
 }
 
+.check section p:last-child {
+    padding-right: 80px;
+}
+
 .check h3:last-child {
     color: var(--kv_orange);
     text-align: right;
     letter-spacing: 8px;
     margin-bottom: 0;
+    align-self: flex-end;
 }
 
 /*----------付款區塊-------------*/
@@ -149,4 +172,42 @@
 
 .lightbox .container img {
     margin: 0 auto;
+}
+
+/*-------------儲值金扣款 & 信用卡切換---------------*/
+.-off {
+    display: none;
+}
+
+.login {
+    width: 360px;
+    padding: 20px;
+}
+
+.login label {
+    padding-left: 0;
+    font-size: 20px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.group div {
+    display: flex;
+}
+
+.group:first-child {
+    margin-bottom: 16px;
+}
+
+.group:first-child input {
+    margin-right: 20px;
+}
+
+.group:last-child input {
+    width: 50px;
+    margin-right: 8px;
 }
