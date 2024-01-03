@@ -69,3 +69,7 @@ body {
 .lb_login .btn_bar .btn_blue {
     margin-right: 10px;
 }
+
+.lb_login .btn_bar .btn {
+    line-height: 16px;
+}

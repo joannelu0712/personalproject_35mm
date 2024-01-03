@@ -142,3 +142,7 @@
 .lightbox .btn_submit {
     width: 15vw;
 }
+
+.lightbox .btn_bar .btn {
+    line-height: 16px;
+}
