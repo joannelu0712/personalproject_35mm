@@ -14,7 +14,11 @@ $(function () {
     let lightbox_el = document.getElementsByClassName("lightbox")[1];
     lightbox_el.addEventListener('click', function () {
         lightbox_el.classList.add('none');
-        window.location.assign('../webPage/profile.html') //點擊視窗外強制前往會員中心
+        if ($('.header ul a').attr('class') !== 'page_home') {
+            window.location.assign('webPage/profile.html') //點擊視窗外強制前往會員中心
+        } else {
+            window.location.assign('../webPage/profile.html') //點擊視窗外強制前往會員中心
+        }
     })
     lightbox_el.querySelector('.popup').addEventListener('click', function (e) {
         e.stopPropagation();
