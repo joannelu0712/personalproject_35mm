@@ -12,14 +12,38 @@ $(function () {
     let home_rel = document.getElementsByClassName("btn_submit")[0];
     home_rel.addEventListener("click", function (e) {
         e.preventDefault();
-        lightbox_el.classList.remove("none");//點擊視窗外就關掉lightbox
+        lightbox_el.classList.remove("none");
     });
     lightbox_el.addEventListener('click', function () {
-        lightbox_el.classList.add('none');
+        lightbox_el.classList.add('none');//點擊視窗外就關掉lightbox
     })
     lightbox_el.querySelector('.popup').addEventListener('click', function (e) {
         e.stopPropagation();
     })
+    // 帳號、密碼皆須輸入才能送出
+    $('.lightbox .btn_submit').attr('disabled', true).css({
+        'pointer-events': 'none',
+        'background-color': '#666',
+        'border': '4px solid #666'
+    });
+    $('input').keyup(function () {
+        let user_info = $('#user').val();
+        let pd_info = $('#pd').val();
+        if (user_info !== '' && pd_info !== '') {
+            $('.lightbox .btn_submit').attr('disabled', false).css({
+                'pointer-events': 'auto',
+                'background-color': 'var(--kv_orange)',
+                'border': '4px solid var(--kv_orange)'
+            });
+        } else {
+            $('.lightbox .btn_submit').attr('disabled', true).css({
+                'pointer-events': 'none',
+                'background-color': '#666',
+                'border': '4px solid #666'
+            });
+        }
+    })
+
     //如果在此會員登入，則儲存到local storage
     $('.lightbox .btn_submit').click(function () {
         let login_info = {

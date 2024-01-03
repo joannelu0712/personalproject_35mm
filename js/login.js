@@ -19,4 +19,29 @@ $(function () {
     lightbox_el.querySelector('.popup').addEventListener('click', function (e) {
         e.stopPropagation();
     })
+    // 帳號、密碼皆須輸入才能送出
+    $('.login .btn_submit').attr('disabled', true).css({
+        'pointer-events': 'none',
+        'background-color': '#666',
+        'border': '4px solid #666'
+    });
+    $('input').keyup(function () {
+        let user_info = $('#user').val();
+        let pd_info = $('#pd').val();
+        if (user_info !== '' && pd_info !== '') {
+            $('.login .btn_submit').attr('disabled', false).css({
+                'pointer-events': 'auto',
+                'background-color': 'var(--kv_orange)',
+                'border': '4px solid var(--kv_orange)'
+            });
+        } else {
+            $('.login .btn_submit').attr('disabled', true).css({
+                'pointer-events': 'none',
+                'background-color': '#666',
+                'border': '4px solid #666'
+            });
+        }
+    })
+
+
 })
