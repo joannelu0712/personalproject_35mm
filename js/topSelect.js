@@ -11,7 +11,12 @@ $(function () {
             $('#switch a').text('Profile');
             $('#switch a').click(function (e) {
                 e.preventDefault();
-                window.location.assign('../webPage/profile.html')
+                if ($('.header ul a').attr('class') !== 'page_home') {
+                    window.location.assign('webPage/profile.html')
+                }
+                else {
+                    window.location.assign('../webPage/profile.html')
+                }
             })
         }
     }
