@@ -1,3 +1,4 @@
+// index.html
 $(function () {
     const movieName = ["Days of Heaven (1978)", "Blue Velvet (1986)", "Drive My Car (2021)", "Das Boot (1981)", "Mississipi Burning (1988)", "The Last Picture Show (1971)", "Stand By Me (1986)", "Blade Runner: The Final Cut (1982)"];
     const movieText = ["天堂之日", "藍絲絨", "在車上", "從海底出擊", "烈血大風暴", "最後一場電影", "站在我這邊", "銀翼殺手: 終極版"];
@@ -20,8 +21,6 @@ $(function () {
             changeText.innerText = movieText[i];
         });
     }
-
-
 
 })
 

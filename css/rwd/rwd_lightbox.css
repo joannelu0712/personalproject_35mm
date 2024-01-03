@@ -35,6 +35,16 @@
     .lightbox i {
         font-size: 20px;
     }
+
+    .lb_login .popup {
+        width: 400px;
+        margin-top: 80px;
+    }
+
+    .lb_login .popup img {
+        width: 60px;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width:780px) {
@@ -65,6 +75,11 @@
         margin-right: 8px;
     }
 
+    .lb_login .popup {
+        width: 400px;
+        margin-top: 80px;
+    }
+
 }
 
 @media screen and (max-width:620px) {
@@ -80,6 +95,11 @@
     .lightbox .container ul+div {
         margin-bottom: 0px;
         width: 100%;
+    }
+
+    .lb_login .popup {
+        width: 350px;
+        margin-top: 80px;
     }
 }
 
@@ -151,4 +171,5 @@
         height: 4px;
         background-color: black;
     }
+
 }

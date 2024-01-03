@@ -1,0 +1,61 @@
+/* profile.html */
+/*------------RWD--------------*/
+@media screen and (max-width:900px) {
+
+    .last_four {
+        flex-wrap: wrap;
+    }
+
+    .last_four section {
+        flex-basis: 350px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:710px) {
+
+
+    .info_pool {
+        width: 400px;
+    }
+
+    .info_pool section {
+        flex-basis: 130px;
+    }
+
+    .last_four section {
+        flex-basis: 250px;
+
+    }
+}
+
+@media screen and (max-width:510px) {
+    .user_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .info_pool h3,
+    .info_pool p,
+    .last_four p {
+        font-size: 16px;
+    }
+
+    .info_pool {
+        width: 280px;
+    }
+
+
+    .info_pool section {
+        flex-basis: 90px;
+    }
+
+    .last_four img {
+        width: 140px;
+    }
+
+    .last_four section {
+        flex-basis: 180px;
+
+    }
+}

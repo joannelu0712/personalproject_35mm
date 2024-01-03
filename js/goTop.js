@@ -1,4 +1,6 @@
+// index.html
 $(function () {
+    // 依據網頁寬度不同，Top鍵出現時機不同
     if (window.innerWidth <= 550) {
         $('.go_top').addClass('-off')
     } else
@@ -32,8 +34,7 @@ $(function () {
                     )
                 })
             }
-
-
+    // 網頁回頂端的動畫
     $('.go_top').click(function (e) {
         e.preventDefault();
         $("html,body").animate(

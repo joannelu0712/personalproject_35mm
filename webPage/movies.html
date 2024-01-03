@@ -14,13 +14,9 @@
     <link rel="stylesheet" href="../css/component.css">
     <link rel="stylesheet" href="../css/lightbox.css">
     <link rel="stylesheet" href='../css/style_movies.css'>
-
     <link rel="stylesheet" href="../css/rwd/rwd_common.css">
     <link rel="stylesheet" href="../css/rwd/rwd_lightbox.css">
     <link rel="stylesheet" href="../css/rwd/rwd_movies.css">
-
-
-
     <script src="https://kit.fontawesome.com/a7a16df63a.js" crossorigin="anonymous"></script>
     <script src="../source/jquery-3.7.1.js"></script>
     <script src="../source/jquery-ui.js"></script>
@@ -56,7 +52,6 @@
     <!-- 滿版圖 --><!-- Slider main container -->
     <div class="carousel">
         <div class="top full swiper">
-
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="../img/04_1film/carousel/carousel_01.jpg" alt=""></div>
@@ -73,7 +68,6 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
-
     <!-- 左方sidebar -->
     <main>
         <div class="side_bar">
@@ -184,7 +178,6 @@
         </div>
     </main>
     <!-- footer -->
-
     <div class="footer">
         <div class="concern">
             <ul class="about">
@@ -193,7 +186,6 @@
                 <li><a href="#">版權聲明</a></li>
                 <li><a href="#">聯絡我們</a></li>
             </ul>
-
         </div>
         <img src="../img/logo/logo_gray.png" alt="">
         <ul class="social_media">
@@ -206,7 +198,6 @@
     <div>
         <p>本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
     </div>
-
     <!-- lightbox for ticket -->
     <div class="lightbox none">
         <div class="wrapper popup">
@@ -305,6 +296,7 @@
     <script src="../js/topSelect.js"></script>
     <script src="../js/ticketLightbox.js"></script>
     <script>
+        // 輪播套件需要的JS
         const swiper = new Swiper('.swiper', {
             // Optional parameters
             direction: 'horizontal',
@@ -317,7 +309,7 @@
             }
         }
         )
-
+        // 取消a tag預設行為
         $('.side_bar a').click(function (e) {
             e.preventDefault();
         })
@@ -325,8 +317,3 @@
 </body>
 
 </html>
-
-<!-- loop: true,
-autoplay: {
-    delay: 1000,
-} -->

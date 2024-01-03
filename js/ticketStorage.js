@@ -1,3 +1,12 @@
+// index.html
+// showtimes.html
+// movies.html
+// pond.html
+// theaters.html
+// member.html
+// profile.html
+//------------------------------------
+// 仿後端
 let all_data = {
     '淑女鳥': {
         'img': '../img/02buyTicket/buyTicket/buyTicket_movie_01.jpg',
@@ -26,17 +35,14 @@ let all_data = {
     '銀翼殺手：終極版': {
         'img': '../img/02buyTicket/buyTicket/buyTicket_movie_09.jpg',
     }
-
 }
-
-
+// 取出local storage資料並呈現於頁面
 $(function () {
     let ticket_info_t = JSON.parse(localStorage.getItem("ticket_info"));
     $('h3.title').text(ticket_info_t.film_name)
     $('.ticket .whitebgc:nth-child(3)>p:first-child').text(ticket_info_t.theater);
-
     document.querySelector('.mini_ticket .img_title').setAttribute('src', all_data[ticket_info_t.film_name].img)
-
+    // 最初的寫法
     // switch (ticket_info_t.film_name) {
     //     case "淑女鳥":
     //         $('.mini_ticket .img_title').attr('src', "../img/02buyTicket/buyTicket/buyTicket_movie_01.jpg");

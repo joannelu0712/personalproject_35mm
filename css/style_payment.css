@@ -1,3 +1,4 @@
+/* payment.html */
 .wrapper {
     max-width: 1000px;
 }
@@ -159,6 +160,9 @@
 
 .lightbox .container>p {
     margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 .lightbox .container .btn_bar {

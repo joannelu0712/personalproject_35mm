@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>35mm | 會員中心</title>
+    <title>35mm | 登入</title>
     <!-- Google Fonts: Aoboshi One, Inter(medium & bold),Noto Sans(medium & bold) -->
     <link
         href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Inter:wght@500;700&family=Noto+Sans+TC:wght@500;700&display=swap"
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="../css/component.css">
     <link rel="stylesheet" href="../css/lightbox.css">
     <link rel="stylesheet" href="../css/style_member.css">
-
     <link rel="stylesheet" href="../css/rwd/rwd_common.css">
     <link rel="stylesheet" href="../css/rwd/rwd_lightbox.css">
     <link rel="stylesheet" href="../css/rwd/rwd_member.css">
@@ -193,14 +192,25 @@
             </div>
         </div>
     </div>
+    <!-- lightbox -->
+    <div class="lightbox none lb_login">
+        <div class="wrapper popup">
+            <h2 class="kv_title">歡迎回來</h2>
+            <div class="container">
+                <h3>您已成功登入！</h3>
+                <div class="btn_bar">
+                    <a href="../index.html" class="btn btn_blue">Home</a>
+                    <a href="../webPage/profile.html" class="btn">會員中心</a>
+                </div>
+                <img src="../img/logo/logo_gray.png" alt="">
+            </div>
+        </div>
+    </div>
     <!-- 登入框JS -->
     <script src="../js/topSelect.js"></script>
     <script src="../js/ticketLightbox.js"></script>
+    <script src="../js/login.js"></script>
     <script>
-        let submit_rel = document.getElementsByClassName('btn_submit')[0];
-        submit_rel.addEventListener('click', function () {
-            alert('您已成功登入');
-        });
         let register_rel = document.getElementsByClassName('register')[0];
         register_rel.addEventListener('click', function () {
             alert('您已經是會員囉！');
