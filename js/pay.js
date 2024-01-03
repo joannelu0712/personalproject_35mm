@@ -25,6 +25,8 @@ $(function () {
         $('.money a:nth-child(2)').removeClass('btn_off').addClass('btn_on')
         $('.money a:nth-child(3)').removeClass('btn_off').addClass('btn_off')
         $('.money a:nth-child(4)').removeClass('btn_off').addClass('btn_ban')
+        $('.lightbox .btn_bar .btn_blue').css('margin', 0)
+        $('.lightbox .btn_bar a:last-child').addClass('-off')
         $('.cal').addClass('-off')
         $('.card').removeClass('-off')
     } else {// 會員購票，所有支付皆支援
