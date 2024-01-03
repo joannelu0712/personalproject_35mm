@@ -6,7 +6,7 @@ $(function () {
         $('.lb_login').removeClass('none');
         // 將登入與否存入storage
         let login_info = {
-            'isLogin': true
+            'is_login': true
         };
         localStorage.setItem("login_info", JSON.stringify(login_info));
     })

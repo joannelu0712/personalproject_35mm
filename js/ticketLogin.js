@@ -47,7 +47,7 @@ $(function () {
     //如果在此會員登入，則儲存到local storage
     $('.lightbox .btn_submit').click(function () {
         let login_info = {
-            'isLogin': true
+            'is_login': true
         };
         localStorage.setItem("login_info", JSON.stringify(login_info));
     })
