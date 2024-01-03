@@ -44,7 +44,7 @@
 
 /*----------訂票燈箱------------*/
 .lightbox {
-    padding-top: 60px;
+    padding-top: 10px;
     background-color: rgba(0, 0, 0, .7);
 }
 
@@ -149,7 +149,7 @@
 
 .lightbox .container>div {
     width: 35%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .lightbox .container h3 {
@@ -160,26 +160,6 @@
     color: var(--kv_orange);
     margin-left: 10px;
 }
-
-/* .lightbox .container div:first-child label {
-    display: flex;
-
-}
-
-.lightbox .container div:first-child {
-    position: relative;
-}
-
-.lightbox .container label+input {
-    background-color: aqua;
-    width: 50px;
-    height: 20px;
-    position: absolute;
-    right: 30%;
-} */
-
-
-
 
 .fa-calendar-alt:before,
 .fa-calendar-days:before {
@@ -286,6 +266,10 @@
 }
 
 /*--------登入&登出成功lightbox----------*/
+.lb_login {
+    padding-top: 60px;
+}
+
 .lb_login .popup {
     width: 400px;
     margin-top: 80px;
@@ -312,4 +296,5 @@
 .lb_login .btn_bar+img {
     width: 60px;
     margin: 0;
+    margin-top: 20px;
 }
