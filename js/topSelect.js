@@ -6,10 +6,10 @@ $(function () {
     if (localStorage.getItem('login_info') !== null) {
         let login_info_t = JSON.parse(localStorage.getItem("login_info"));
         if (login_info_t.isLogin == false) {
-            $('.header li:last-child a').text('Login');
+            $('#switch a').text('Login');
         } else {
-            $('.header li:last-child a').text('Profile');
-            $('.header li:last-child a').click(function (e) {
+            $('#switch a').text('Profile');
+            $('#switch a').click(function (e) {
                 e.preventDefault();
                 window.location.assign('../webPage/profile.html')
             })

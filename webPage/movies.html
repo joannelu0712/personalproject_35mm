@@ -46,7 +46,7 @@
             </li>
             <li><a href="../webPage/theaters.html">Theaters</a></li>
             <li><a href="#">Foods & Drinks</a></li>
-            <li><a href="../webPage/member.html">Login</a></li>
+            <li id="switch"><a href="../webPage/member.html">Login</a></li>
         </ul>
     </div>
     <!-- 滿版圖 --><!-- Slider main container -->
@@ -307,8 +307,7 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             }
-        }
-        )
+        })
         // 取消a tag預設行為
         $('.side_bar a').click(function (e) {
             e.preventDefault();
