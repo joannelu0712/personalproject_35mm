@@ -144,7 +144,8 @@ h6 {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
 }
 
-.header li:hover a {
+.header li:hover a,
+.header ul li .page_now {
     border-top: 2px dashed var(--kv_orange);
     border-bottom: 2px dashed var(--kv_orange);
     color: var(--kv_orange);
