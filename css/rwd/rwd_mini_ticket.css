@@ -89,6 +89,7 @@
 
     .mini_ticket .ticket,
     .mini_ticket .check {
-        width: 80%;
+        width: 330px;
+        box-sizing: border-box;
     }
 }
